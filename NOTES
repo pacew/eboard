@@ -1,3 +1,35 @@
+https://www.woolseyworkshop.com/2019/07/01/performing-a-circuit-simulation-in-kicad/
+
+MXXXXXXX nd ng ns nb mname <m=val> <l=val> <w=val>
+D = 8
+G = 4
+S = 1
+8 4 1
+MQ1 VCC VIN /Vload AO4407A
+Q1 /Vload VIN VCC
+
+
 started with
 
 ~/pace-kicad/newboard eboard
+https://github.com/prasad-dot-ws/ESP32_MIFA_PCB_ANTENNA
+
+https://www.esp32.com/viewtopic.php?t=8050
+
+
+https://www.ti.com/lit/an/swra351a/swra351a.pdf
+https://www.ti.com/lit/an/swru120d/swru120d.pdf?ts=1604123342796
+
+https://github.com/Charlio99/ESPesh
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-pico-kit.html
+https://makergram.com/community/topic/38/pcb-design-for-esp32-stand-alone-module/9
+http://iot-bits.com/wifi-pcb-trace-antenna-esp32-esp8266/
+
+https://lcsc.com/product-detail/Others_Espressif-Systems-ESP32-PICO-D4_C193707.html/?href=jlc-SMT
+
+
+esp32
+3.7 lipo with charger usb
+monitor battery voltage  (0-1v interal adc, or external?)
+3x aa batteries
+gpio pins

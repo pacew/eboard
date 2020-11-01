@@ -1,0 +1,156 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5F9ED6D7
+P 3100 2300
+F 0 "V1" H 3328 2346 50  0000 L CNN
+F 1 "5" H 3328 2255 50  0000 L CNN
+F 2 "" H 3100 2300 50  0001 C CNN
+F 3 "~" H 3100 2300 50  0001 C CNN
+	1    3100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F9EDD0B
+P 3100 2600
+F 0 "#PWR0103" H 3100 2350 50  0001 C CNN
+F 1 "GND" H 3105 2427 50  0000 C CNN
+F 2 "" H 3100 2600 50  0001 C CNN
+F 3 "" H 3100 2600 50  0001 C CNN
+	1    3100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0104
+U 1 1 5F9EE20E
+P 3100 2000
+F 0 "#PWR0104" H 3100 1850 50  0001 C CNN
+F 1 "VCC" H 3115 2173 50  0000 C CNN
+F 2 "" H 3100 2000 50  0001 C CNN
+F 3 "" H 3100 2000 50  0001 C CNN
+	1    3100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V2
+U 1 1 5F9EE8FF
+P 3100 3350
+F 0 "V2" H 3328 3396 50  0000 L CNN
+F 1 "sin(0 5 1k)" H 3328 3305 50  0000 L CNN
+F 2 "" H 3100 3350 50  0001 C CNN
+F 3 "~" H 3100 3350 50  0001 C CNN
+	1    3100 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 2950 2    50   Input ~ 0
+VIN
+Wire Wire Line
+	3400 2950 3100 2950
+Wire Wire Line
+	3100 2950 3100 3050
+$Comp
+L power:GND #PWR0105
+U 1 1 5F9EEF68
+P 3100 3650
+F 0 "#PWR0105" H 3100 3400 50  0001 C CNN
+F 1 "GND" H 3105 3477 50  0000 C CNN
+F 2 "" H 3100 3650 50  0001 C CNN
+F 3 "" H 3100 3650 50  0001 C CNN
+	1    3100 3650
+	1    0    0    -1  
+$EndComp
+Text Notes 3200 1150 0    50   ~ 0
+.tran 1u 1m
+Text GLabel 5200 2750 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	5200 2750 5600 2750
+$Comp
+L power:VCC #PWR01
+U 1 1 5F9EF80D
+P 5900 2350
+F 0 "#PWR01" H 5900 2200 50  0001 C CNN
+F 1 "VCC" H 5915 2523 50  0000 C CNN
+F 2 "" H 5900 2350 50  0001 C CNN
+F 3 "" H 5900 2350 50  0001 C CNN
+	1    5900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2350 5900 2550
+$Comp
+L Device:R R1
+U 1 1 5F9F004A
+P 5900 3350
+F 0 "R1" H 5970 3396 50  0000 L CNN
+F 1 "1k" H 5970 3305 50  0000 L CNN
+F 2 "" V 5830 3350 50  0001 C CNN
+F 3 "~" H 5900 3350 50  0001 C CNN
+	1    5900 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2950 5900 3200
+$Comp
+L power:GND #PWR02
+U 1 1 5F9F075A
+P 5900 3700
+F 0 "#PWR02" H 5900 3450 50  0001 C CNN
+F 1 "GND" H 5905 3527 50  0000 C CNN
+F 2 "" H 5900 3700 50  0001 C CNN
+F 3 "" H 5900 3700 50  0001 C CNN
+	1    5900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3500 5900 3700
+Text Label 5900 3100 0    50   ~ 0
+Vload
+Connection ~ 5900 2550
+Wire Wire Line
+	5700 2550 5800 2550
+Connection ~ 5800 2550
+Wire Wire Line
+	5800 2550 5900 2550
+Wire Wire Line
+	5700 2950 5800 2950
+Connection ~ 5900 2950
+Connection ~ 5800 2950
+Wire Wire Line
+	5800 2950 5900 2950
+$Comp
+L pace:AO4407A Q1
+U 1 1 5F9EA0B3
+P 5800 2750
+F 0 "Q1" H 6005 2704 50  0000 L CNN
+F 1 "AO4407A" H 6005 2795 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6000 2850 50  0001 C CNN
+F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 5800 2750 50  0001 C CNN
+F 4 "C16072" H 5800 2750 50  0001 C CNN "LCSC"
+F 5 "X" H 5800 2750 50  0001 C CNN "Spice_Primitive"
+F 6 "AO4407" H 5800 2750 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 5800 2750 50  0001 C CNN "Spice_Netlist_Enabled"
+F 8 "AO4407.mod" H 5800 2750 50  0001 C CNN "Spice_Lib_File"
+F 9 "8 4 1" H 5800 2750 50  0001 C CNN "Spice_Node_Sequence"
+	1    5800 2750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5700 2950 5600 2950
+Connection ~ 5700 2950
+$EndSCHEMATC
