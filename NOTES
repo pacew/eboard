@@ -1,3 +1,16 @@
+tps63001 $1.08/1 $.79/10 459 in stock
+input 1.8..5.5v;  800mA output;  for 2 or 3 cells
+auto switch from boost to buck
+
+tps61070 0.68/1  2801 in stock
+input 0.9..5.5v; 75mA from 0.9v input; 150mA from 1.8v input
+5v at 200 mA from li-ion
+boost only
+
+
+
+================================================================
+
 https://hackaday.io/project/174898-esp-now-weather-station/log/184803-buckboost-power-supply
 
 https://hackaday.com/2011/12/06/reverse-voltage-protection-with-a-p-fet/

@@ -732,7 +732,7 @@ Connection ~ 8700 1250
 Connection ~ 6650 1250
 Connection ~ 7000 1250
 $Comp
-L switch_spdt:SWITCH SW?
+L eboard-rescue:SWITCH-switch_spdt SW?
 U 1 1 5FA509A0
 P 9050 2600
 F 0 "SW?" H 9050 2811 60  0000 C CNN

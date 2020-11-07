@@ -57,6 +57,21 @@ X Shield 6 -100 -400 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# eboard-rescue_SWITCH-switch_spdt
+#
+DEF eboard-rescue_SWITCH-switch_spdt SW 0 30 Y N 1 F N
+F0 "SW" 0 250 60 H V C CNN
+F1 "eboard-rescue_SWITCH-switch_spdt" 40 -250 59 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -100 0 100 100 N
+X 1 1 400 100 298 L 58 58 0 1 P I
+X 2 2 -400 0 299 R 59 59 0 1 P I
+X 3 3 400 -100 299 L 59 59 0 1 P I
+ENDDRAW
+ENDDEF
+#
 # pace_100
 #
 DEF pace_100 R 0 10 N N 1 F N
@@ -467,22 +482,6 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# switch_spdt_SWITCH
-#
-DEF switch_spdt_SWITCH SW 0 30 Y N 1 F N
-F0 "SW" 0 250 60 H V C CNN
-F1 "switch_spdt_SWITCH" 40 -250 59 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS ON_OFF SWITCH
-DRAW
-P 2 0 1 0 -100 0 100 100 N
-X 1 1 400 100 298 L 58 58 0 1 P I
-X 2 2 -400 0 299 R 59 59 0 1 P I
-X 3 3 400 -100 299 L 59 59 0 1 P I
 ENDDRAW
 ENDDEF
 #
