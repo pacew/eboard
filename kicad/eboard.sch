@@ -131,13 +131,13 @@ $EndComp
 $Comp
 L pace:SRV05-4 U4
 U 1 1 5FA85788
-P 4200 1400
-F 0 "U4" H 4450 900 50  0000 C CNN
-F 1 "SRV05-4" H 4600 800 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4900 950 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 4200 1400 50  0001 C CNN
-F 4 "C85364" H 4200 1400 50  0001 C CNN "LCSC"
-	1    4200 1400
+P 4500 1400
+F 0 "U4" H 4750 900 50  0000 C CNN
+F 1 "SRV05-4" H 4900 800 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5200 950 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 4500 1400 50  0001 C CNN
+F 4 "C85364" H 4500 1400 50  0001 C CNN "LCSC"
+	1    4500 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -154,43 +154,25 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F9FE0F5
-P 4200 1900
-F 0 "#PWR?" H 4200 1650 50  0001 C CNN
-F 1 "GND" H 4205 1727 50  0000 C CNN
-F 2 "" H 4200 1900 50  0001 C CNN
-F 3 "" H 4200 1900 50  0001 C CNN
-	1    4200 1900
+P 4500 1900
+F 0 "#PWR?" H 4500 1650 50  0001 C CNN
+F 1 "GND" H 4505 1727 50  0000 C CNN
+F 2 "" H 4500 1900 50  0001 C CNN
+F 3 "" H 4500 1900 50  0001 C CNN
+	1    4500 1900
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2700 1700
 NoConn ~ 3100 1500
 Wire Wire Line
-	3100 1300 3250 1300
+	3100 1300 3150 1300
 Wire Wire Line
-	3100 1400 3250 1400
-Wire Wire Line
-	3450 1400 3450 1500
-Wire Wire Line
-	3450 1500 3700 1500
-Text GLabel 3300 1150 2    50   Input ~ 0
+	3100 1400 3150 1400
+Text GLabel 3150 1300 2    50   Input ~ 0
 USB_DP
-Wire Wire Line
-	3300 1150 3250 1150
-Wire Wire Line
-	3250 1150 3250 1300
-Connection ~ 3250 1300
-Wire Wire Line
-	3250 1300 3700 1300
-Text GLabel 3300 1750 2    50   Input ~ 0
+Text GLabel 3150 1400 2    50   Input ~ 0
 USB_DM
-Wire Wire Line
-	3300 1750 3250 1750
-Wire Wire Line
-	3250 1750 3250 1400
-Connection ~ 3250 1400
-Wire Wire Line
-	3250 1400 3450 1400
-Text GLabel 5000 700  2    50   Input ~ 0
+Text GLabel 5250 700  2    50   Input ~ 0
 Vin
 Wire Wire Line
 	3100 1100 3200 1100
@@ -227,13 +209,13 @@ Wire Wire Line
 $Comp
 L pace:bead FB2
 U 1 1 5FA2A41A
-P 4500 700
-F 0 "FB2" V 4355 700 50  0000 C CNN
-F 1 "bead" V 4354 700 50  0001 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" V 4430 700 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Sunlord-GZ2012D101TF_C1015.pdf" H 4500 700 50  0001 C CNN
-F 4 "C1015" H 4500 700 50  0001 C CNN "LCSC"
-	1    4500 700 
+P 4750 700
+F 0 "FB2" V 4605 700 50  0000 C CNN
+F 1 "bead" V 4604 700 50  0001 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 4680 700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Sunlord-GZ2012D101TF_C1015.pdf" H 4750 700 50  0001 C CNN
+F 4 "C1015" H 4750 700 50  0001 C CNN "LCSC"
+	1    4750 700 
 	0    1    1    0   
 $EndComp
 Text Notes 700  750  0    50   ~ 0
@@ -251,27 +233,27 @@ F 4 "C1015" H 1150 900 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3200 700  4200 700 
+	3200 700  4500 700 
 Wire Wire Line
-	4200 700  4200 900 
+	4500 700  4500 900 
 Wire Wire Line
 	3200 700  3200 1100
 $Comp
 L pace:SS210 D3
 U 1 1 5FACDF9F
-P 4750 700
-F 0 "D3" H 4750 493 50  0000 C CNN
-F 1 "SS210" H 4750 584 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA" V 4750 700 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1903041730_MDD-Jiangsu-Yutai-Elec-SS210_C14996.pdf" V 4750 700 50  0001 C CNN
-F 4 "C14996" H 4750 700 50  0001 C CNN "LCSC"
-	1    4750 700 
+P 5000 700
+F 0 "D3" H 5000 493 50  0000 C CNN
+F 1 "SS210" H 5000 584 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" V 5000 700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1903041730_MDD-Jiangsu-Yutai-Elec-SS210_C14996.pdf" V 5000 700 50  0001 C CNN
+F 4 "C14996" H 5000 700 50  0001 C CNN "LCSC"
+	1    5000 700 
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4600 700  4650 700 
+	4850 700  4900 700 
 Wire Wire Line
-	4850 700  5000 700 
+	5100 700  5250 700 
 $Comp
 L pace:AO4407A Q1
 U 1 1 5FB3EA5D
@@ -342,45 +324,34 @@ Wire Wire Line
 $Comp
 L pace:10k R8
 U 1 1 5FAB7004
-P 3300 3600
-F 0 "R8" H 3359 3646 50  0000 L CNN
-F 1 "10k" H 3359 3555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 3300 3600 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 3300 3600 50  0001 C CNN
-F 4 "C25744" H 3300 3600 50  0001 C CNN "LCSC"
-	1    3300 3600
+P 3400 3600
+F 0 "R8" H 3459 3646 50  0000 L CNN
+F 1 "10k" H 3459 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3400 3600 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 3400 3600 50  0001 C CNN
+F 4 "C25744" H 3400 3600 50  0001 C CNN "LCSC"
+	1    3400 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 3350 3300 3350
+	3250 3350 3400 3350
 Wire Wire Line
-	3300 3350 3300 3500
-$Comp
-L power:GND #PWR?
-U 1 1 5FABCA2F
-P 3300 3700
-F 0 "#PWR?" H 3300 3450 50  0001 C CNN
-F 1 "GND" H 3305 3527 50  0000 C CNN
-F 2 "" H 3300 3700 50  0001 C CNN
-F 3 "" H 3300 3700 50  0001 C CNN
-	1    3300 3700
-	1    0    0    -1  
-$EndComp
+	3400 3350 3400 3500
 $Comp
 L power:GND #PWR?
 U 1 1 5FABF7F3
-P 3550 3700
-F 0 "#PWR?" H 3550 3450 50  0001 C CNN
-F 1 "GND" H 3555 3527 50  0000 C CNN
-F 2 "" H 3550 3700 50  0001 C CNN
-F 3 "" H 3550 3700 50  0001 C CNN
-	1    3550 3700
+P 3600 3700
+F 0 "#PWR?" H 3600 3450 50  0001 C CNN
+F 1 "GND" H 3605 3527 50  0000 C CNN
+F 2 "" H 3600 3700 50  0001 C CNN
+F 3 "" H 3600 3700 50  0001 C CNN
+	1    3600 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 3250 3550 3250
+	3250 3250 3600 3250
 Wire Wire Line
-	3550 3250 3550 3700
+	3600 3250 3600 3700
 $Comp
 L pace:10u C11
 U 1 1 5FB1F526
@@ -542,17 +513,6 @@ Wire Wire Line
 Connection ~ 2050 3050
 Wire Wire Line
 	2050 3050 1700 3050
-$Comp
-L pace:TPS63000 U2
-U 1 1 5FA83D18
-P 2450 5250
-F 0 "U2" H 2450 5917 50  0000 C CNN
-F 1 "TPS63000" H 2450 5826 50  0000 C CNN
-F 2 "Package_SON:Texas_DRC0010J_ThermalVias" H 3300 4700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps63000.pdf" H 2150 5800 50  0001 C CNN
-	1    2450 5250
-	1    0    0    -1  
-$EndComp
 $Comp
 L pace:2.2uH L1
 U 1 1 5FA85134
@@ -868,8 +828,8 @@ F 4 "C22935" H 650 3300 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 700  4200 700 
-Connection ~ 4200 700 
+	4650 700  4500 700 
+Connection ~ 4500 700 
 Text Notes 4000 3800 0    50   ~ 0
 Connect single Li-ion or LiPo\nto one of these connectors
 Text Notes 3300 450  0    50   ~ 0
@@ -964,9 +924,6 @@ Wire Wire Line
 Wire Wire Line
 	8750 2200 8850 2200
 Wire Wire Line
-	9650 1000 10000 1000
-Connection ~ 9650 1000
-Wire Wire Line
 	9250 1000 9650 1000
 Connection ~ 9250 1000
 Wire Wire Line
@@ -984,9 +941,6 @@ Connection ~ 7650 1000
 Connection ~ 7200 1000
 Wire Wire Line
 	7200 1000 7650 1000
-Wire Wire Line
-	9650 800  10000 800 
-Connection ~ 9650 800 
 Wire Wire Line
 	9250 800  9650 800 
 Connection ~ 9250 800 
@@ -1015,18 +969,6 @@ F 2 "Capacitor_SMD:C_0402_1005Metric" H 7200 900 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf" H 7200 900 50  0001 C CNN
 F 4 "C15525" H 7200 900 50  0001 C CNN "LCSC"
 	1    7200 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L pace:100n C8
-U 1 1 5FA00E4A
-P 10000 900
-F 0 "C8" H 10092 946 50  0000 L CNN
-F 1 "100n" H 10092 855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 10000 900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf" H 10000 900 50  0001 C CNN
-F 4 "C1525" H 10000 900 50  0001 C CNN "LCSC"
-	1    10000 900 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1145,6 +1087,45 @@ F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.3x5.3mm" H 8850 2100 50  0001 C
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf" H 9100 2800 50  0001 C CNN
 F 4 "C193707" H 8850 1929 50  0001 C CNN "LCSC"
 	1    8850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FABCA2F
+P 3400 3700
+F 0 "#PWR?" H 3400 3450 50  0001 C CNN
+F 1 "GND" H 3405 3527 50  0000 C CNN
+F 2 "" H 3400 3700 50  0001 C CNN
+F 3 "" H 3400 3700 50  0001 C CNN
+	1    3400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FAC67E2
+P 3250 3700
+F 0 "#PWR?" H 3250 3450 50  0001 C CNN
+F 1 "GND" H 3255 3527 50  0000 C CNN
+F 2 "" H 3250 3700 50  0001 C CNN
+F 3 "" H 3250 3700 50  0001 C CNN
+	1    3250 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3450 3250 3700
+Text GLabel 5000 1500 2    50   Input ~ 0
+USB_DM
+Text GLabel 4000 1300 0    50   Input ~ 0
+USB_DP
+$Comp
+L pace:TPS63000 U2
+U 1 1 5FB2B195
+P 2450 5250
+F 0 "U2" H 2450 5917 50  0000 C CNN
+F 1 "TPS63000" H 2450 5826 50  0000 C CNN
+F 2 "Package_SON:Texas_DRC0010J_ThermalVias" H 3300 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps63000.pdf" H 2150 5800 50  0001 C CNN
+	1    2450 5250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
