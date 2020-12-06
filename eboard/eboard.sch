@@ -137,8 +137,6 @@ F 4 "C1015" H 4750 700 50  0001 C CNN "LCSC"
 	1    4750 700 
 	0    1    1    0   
 $EndComp
-Text Notes 700  750  0    50   ~ 0
-1.8 to 4.6 volts
 $Comp
 L pace:bead FB1
 U 1 1 5FA231C5
@@ -292,17 +290,6 @@ F 1 "GND" H 3155 2977 50  0000 C CNN
 F 2 "" H 3150 3150 50  0001 C CNN
 F 3 "" H 3150 3150 50  0001 C CNN
 	1    3150 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J4
-U 1 1 5FB3338C
-P 3450 2950
-F 0 "J4" H 3558 3039 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 3558 3040 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3450 2950 50  0001 C CNN
-F 3 "~" H 3450 2950 50  0001 C CNN
-	1    3450 2950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -483,47 +470,43 @@ Wire Wire Line
 $Comp
 L pace:10u C14
 U 1 1 5FAB3458
-P 3850 4800
-F 0 "C14" H 3942 4846 50  0000 L CNN
-F 1 "10u" H 3942 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3850 4800 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf" H 3850 4800 50  0001 C CNN
-F 4 "C15525" H 3850 4800 50  0001 C CNN "LCSC"
-	1    3850 4800
+P 4250 5000
+F 0 "C14" H 4342 5046 50  0000 L CNN
+F 1 "10u" H 4342 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4250 5000 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf" H 4250 5000 50  0001 C CNN
+F 4 "C15525" H 4250 5000 50  0001 C CNN "LCSC"
+	1    4250 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 4650 3850 4650
-Wire Wire Line
-	3850 4650 3850 4700
-Connection ~ 3400 4650
+	4250 4850 4250 4900
 $Comp
 L power:GND #PWR?
 U 1 1 5FAB6079
-P 3850 4900
-F 0 "#PWR?" H 3850 4650 50  0001 C CNN
-F 1 "GND" H 3855 4727 50  0000 C CNN
-F 2 "" H 3850 4900 50  0001 C CNN
-F 3 "" H 3850 4900 50  0001 C CNN
-	1    3850 4900
+P 4250 5100
+F 0 "#PWR?" H 4250 4850 50  0001 C CNN
+F 1 "GND" H 4255 4927 50  0000 C CNN
+F 2 "" H 4250 5100 50  0001 C CNN
+F 3 "" H 4250 5100 50  0001 C CNN
+	1    4250 5100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5FAB8FC4
-P 4150 4500
-F 0 "#PWR?" H 4150 4350 50  0001 C CNN
-F 1 "+3.3V" H 4165 4673 50  0000 C CNN
-F 2 "" H 4150 4500 50  0001 C CNN
-F 3 "" H 4150 4500 50  0001 C CNN
-	1    4150 4500
+P 4550 4700
+F 0 "#PWR?" H 4550 4550 50  0001 C CNN
+F 1 "+3.3V" H 4565 4873 50  0000 C CNN
+F 2 "" H 4550 4700 50  0001 C CNN
+F 3 "" H 4550 4700 50  0001 C CNN
+	1    4550 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 4650 4150 4650
+	4250 4850 4550 4850
 Wire Wire Line
-	4150 4650 4150 4500
-Connection ~ 3850 4650
+	4550 4850 4550 4700
 $Comp
 L power:GND #PWR?
 U 1 1 5FABD492
@@ -600,29 +583,29 @@ $EndComp
 $Comp
 L pace:10u C15
 U 1 1 5FAE3142
-P 4150 4800
-F 0 "C15" H 4242 4846 50  0000 L CNN
-F 1 "10u" H 4242 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 4150 4800 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf" H 4150 4800 50  0001 C CNN
-F 4 "C15525" H 4150 4800 50  0001 C CNN "LCSC"
-	1    4150 4800
+P 4550 5000
+F 0 "C15" H 4642 5046 50  0000 L CNN
+F 1 "10u" H 4642 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4550 5000 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf" H 4550 5000 50  0001 C CNN
+F 4 "C15525" H 4550 5000 50  0001 C CNN "LCSC"
+	1    4550 5000
 	1    0    0    -1  
 $EndComp
-Connection ~ 4150 4650
+Connection ~ 4550 4850
 $Comp
 L power:GND #PWR?
 U 1 1 5FAE3554
-P 4150 4900
-F 0 "#PWR?" H 4150 4650 50  0001 C CNN
-F 1 "GND" H 4155 4727 50  0000 C CNN
-F 2 "" H 4150 4900 50  0001 C CNN
-F 3 "" H 4150 4900 50  0001 C CNN
-	1    4150 4900
+P 4550 5100
+F 0 "#PWR?" H 4550 4850 50  0001 C CNN
+F 1 "GND" H 4555 4927 50  0000 C CNN
+F 2 "" H 4550 5100 50  0001 C CNN
+F 3 "" H 4550 5100 50  0001 C CNN
+	1    4550 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4150 4700 4150 4650
+	4550 4900 4550 4850
 $Comp
 L pace:10u C9
 U 1 1 5FAEC0DE
@@ -1001,8 +984,8 @@ F 4 "C2297" H 8200 7150 50  0001 C CNN "LCSC"
 	1    8200 7150
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8050 7050 0    50   Input ~ 0
-IO5
+Text GLabel 8150 6800 0    50   Input ~ 0
+STATUS_LED
 $Comp
 L pace:10k R16
 U 1 1 5FB9FA1D
@@ -1027,18 +1010,7 @@ F 3 "" H 8200 7650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 9650 2300 2    50   Input ~ 0
-IO5
-$Comp
-L Switch:SW_Push SW2
-U 1 1 5FBC7697
-P 9750 7550
-F 0 "SW2" V 9750 7502 50  0000 R CNN
-F 1 "SW_Push" H 9750 7744 50  0001 C CNN
-F 2 "" H 9750 7750 50  0001 C CNN
-F 3 "~" H 9750 7750 50  0001 C CNN
-	1    9750 7550
-	0    -1   -1   0   
-$EndComp
+STATUS_LED
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5FBC769D
@@ -1064,22 +1036,10 @@ F 4 "C25744" H 9750 7200 50  0001 C CNN "LCSC"
 $EndComp
 Wire Wire Line
 	9750 7350 9750 7300
-Connection ~ 9750 7350
 Text GLabel 10050 7350 2    50   Input ~ 0
-IO0
+BOOT0
 Wire Wire Line
 	9750 7350 10050 7350
-$Comp
-L Switch:SW_Push SW1
-U 1 1 5FBDADCF
-P 8700 7500
-F 0 "SW1" V 8700 7452 50  0000 R CNN
-F 1 "SW_Push" H 8700 7694 50  0001 C CNN
-F 2 "" H 8700 7700 50  0001 C CNN
-F 3 "~" H 8700 7700 50  0001 C CNN
-	1    8700 7500
-	0    -1   -1   0   
-$EndComp
 $Comp
 L pace:10k R19
 U 1 1 5FBDADDC
@@ -1098,7 +1058,6 @@ Wire Wire Line
 	9000 7600 9000 7700
 Wire Wire Line
 	9000 7700 8700 7700
-Connection ~ 8700 7700
 Wire Wire Line
 	9200 7300 9000 7300
 Wire Wire Line
@@ -1118,13 +1077,11 @@ F 3 "" H 9750 7750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8050 7050 8200 7050
-Wire Wire Line
 	8200 7250 8200 7350
 Wire Wire Line
 	8200 7550 8200 7650
 Text GLabel 9650 1800 2    50   Input ~ 0
-IO0
+BOOT0
 Text GLabel 7000 5750 2    50   Input ~ 0
 RXD
 Text GLabel 7000 5850 2    50   Input ~ 0
@@ -1163,27 +1120,16 @@ NoConn ~ 5950 6700
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5FC99540
-P 5700 6650
-F 0 "#PWR?" H 5700 6500 50  0001 C CNN
-F 1 "+3.3V" H 5715 6823 50  0000 C CNN
-F 2 "" H 5700 6650 50  0001 C CNN
-F 3 "" H 5700 6650 50  0001 C CNN
-	1    5700 6650
+P 4900 7050
+F 0 "#PWR?" H 4900 6900 50  0001 C CNN
+F 1 "+3.3V" H 4915 7223 50  0000 C CNN
+F 2 "" H 4900 7050 50  0001 C CNN
+F 3 "" H 4900 7050 50  0001 C CNN
+	1    4900 7050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5700 6650 5700 7100
-Wire Wire Line
-	5700 7100 5950 7100
-Wire Wire Line
-	5950 7200 5700 7200
-Wire Wire Line
-	5700 7200 5700 7100
-Connection ~ 5700 7100
 NoConn ~ 6700 7700
 NoConn ~ 6800 7700
-Wire Wire Line
-	6400 7800 6400 7700
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5FD114AE
@@ -1196,64 +1142,6 @@ F 3 "" H 7600 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pace:10k R12
-U 1 1 5FD12CA1
-P 5000 7200
-F 0 "R12" H 5059 7246 50  0000 L CNN
-F 1 "10k" H 5059 7155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 5000 7200 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 5000 7200 50  0001 C CNN
-F 4 "C25744" H 5000 7200 50  0001 C CNN "LCSC"
-	1    5000 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L pace:10k R13
-U 1 1 5FD132AC
-P 5000 7550
-F 0 "R13" H 5059 7596 50  0000 L CNN
-F 1 "10k" H 5059 7505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 5000 7550 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 5000 7550 50  0001 C CNN
-F 4 "C25744" H 5000 7550 50  0001 C CNN "LCSC"
-	1    5000 7550
-	1    0    0    -1  
-$EndComp
-$Comp
-L pace:10k R14
-U 1 1 5FD138D1
-P 5000 7750
-F 0 "R14" H 5059 7796 50  0000 L CNN
-F 1 "10k" H 5059 7705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 5000 7750 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 5000 7750 50  0001 C CNN
-F 4 "C25744" H 5000 7750 50  0001 C CNN "LCSC"
-	1    5000 7750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FD205CA
-P 5000 7850
-F 0 "#PWR?" H 5000 7600 50  0001 C CNN
-F 1 "GND" H 5005 7677 50  0000 C CNN
-F 2 "" H 5000 7850 50  0001 C CNN
-F 3 "" H 5000 7850 50  0001 C CNN
-	1    5000 7850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 7300 5000 7350
-Wire Wire Line
-	5000 7350 5600 7350
-Wire Wire Line
-	5600 7350 5600 7800
-Wire Wire Line
-	5600 7800 6200 7800
-Connection ~ 5000 7350
-Wire Wire Line
-	5000 7350 5000 7450
-$Comp
 L pace:10k R15
 U 1 1 5FD3DB2B
 P 7600 7350
@@ -1265,7 +1153,7 @@ F 4 "C25744" H 7600 7350 50  0001 C CNN "LCSC"
 	1    7600 7350
 	1    0    0    -1  
 $EndComp
-Text GLabel 4900 6950 0    50   Input ~ 0
+Text GLabel 6150 7800 0    50   Input ~ 0
 Vin
 Wire Wire Line
 	7600 7450 7600 7850
@@ -1273,10 +1161,6 @@ Wire Wire Line
 	7600 7850 6500 7850
 Wire Wire Line
 	6500 7850 6500 7700
-Wire Wire Line
-	4900 6950 5000 6950
-Wire Wire Line
-	5000 6950 5000 7100
 $Comp
 L pace:S8050 Q2
 U 1 1 5FD96395
@@ -1352,31 +1236,20 @@ RESET
 Wire Wire Line
 	9150 5650 9650 5650
 Text GLabel 9700 6250 2    50   Input ~ 0
-IO0
+BOOT0
 Wire Wire Line
 	9700 6250 9150 6250
-NoConn ~ 9650 2600
-Text Notes 9700 2600 0    50   ~ 0
-boot option
-NoConn ~ 9650 2000
-Text Notes 9700 2000 0    50   ~ 0
-boot option
-NoConn ~ 9650 2900
-Text Notes 9700 2900 0    50   ~ 0
-boot option
-Text Notes 9850 2300 0    50   ~ 0
-boot option
 Text GLabel 9650 1900 2    50   Input ~ 0
 TXD
 Text GLabel 9650 2100 2    50   Input ~ 0
 RXD
-Text Notes 7550 3300 0    50   ~ 0
-external\nflash\n(not used)
-Text Notes 7600 1950 0    50   ~ 0
+Text Notes 6850 3150 0    50   ~ 0
+external\nflash\n(used inside pico module?)\n
+Text Notes 7050 1950 0    50   ~ 0
 input only
-Text Notes 9700 4000 0    50   ~ 0
+Text Notes 9950 4000 0    50   ~ 0
 input only
-Text Notes 9700 4100 0    50   ~ 0
+Text Notes 9950 4100 0    50   ~ 0
 input only
 $Comp
 L power:+3.3V #PWR?
@@ -1681,30 +1554,6 @@ F 4 "C6568" H 6650 6950 50  0001 C CNN "LCSC"
 	1    6650 6950
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5FD6EA82
-P 6200 7800
-F 0 "#FLG?" H 6200 7875 50  0001 C CNN
-F 1 "PWR_FLAG" H 6200 7973 50  0001 C CNN
-F 2 "" H 6200 7800 50  0001 C CNN
-F 3 "~" H 6200 7800 50  0001 C CNN
-	1    6200 7800
-	1    0    0    -1  
-$EndComp
-Connection ~ 6200 7800
-Wire Wire Line
-	6200 7800 6400 7800
-NoConn ~ 8050 1800
-NoConn ~ 8050 1900
-NoConn ~ 8050 2000
-NoConn ~ 8050 2100
-NoConn ~ 9650 1600
-NoConn ~ 9650 2200
-NoConn ~ 9650 2400
-NoConn ~ 9650 2500
-NoConn ~ 9650 4000
-NoConn ~ 9650 4100
 NoConn ~ 9650 4300
 Wire Wire Line
 	5100 700  5250 700 
@@ -1746,8 +1595,8 @@ Text GLabel 9650 3100 2    50   Input ~ 0
 MISO
 Text GLabel 9650 3000 2    50   Input ~ 0
 SCLK
-Text GLabel 9650 3500 2    50   Input ~ 0
-SPI_CS
+Text GLabel 9650 2900 2    50   Input ~ 0
+SPI_CS0
 $Comp
 L pace:AO4407A_new Q1
 U 1 1 5FEE6ADC
@@ -1760,11 +1609,11 @@ F 4 "C16072" H 1700 1000 50  0001 C CNN "LCSC"
 	1    1700 1000
 	0    -1   -1   0   
 $EndComp
-Text GLabel 9650 3600 2    50   Input ~ 0
+Text GLabel 9650 2800 2    50   Input ~ 0
 OUT0
 Text GLabel 9650 3700 2    50   Input ~ 0
 OUT1
-Text GLabel 9650 3800 2    50   Input ~ 0
+Text GLabel 9650 3500 2    50   Input ~ 0
 OUT2
 Text GLabel 9650 3900 2    50   Input ~ 0
 OUT3
@@ -1792,39 +1641,15 @@ F 3 "" H 900 3300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	900  2750 900  3100
-$Comp
-L pace:2N7002 Q?
-U 1 1 5FE513E5
-P 6350 4600
-F 0 "Q?" H 6550 4800 50  0000 L CNN
-F 1 "2N7002" H 6550 4700 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6550 4700 50  0001 C CNN
-F 3 "https://lcsc.com/product-detail/MOSFET_Changjiang-Electronics-Tech-CJ-2N7002_C8545.html/?href=jlc-SMT" H 6350 4600 50  0001 C CNN
-F 4 "C8545" H 6350 4600 50  0001 C CNN "LCSC"
-	1    6350 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L pace:2N7002 Q?
-U 1 1 5FE53309
-P 7150 4600
-F 0 "Q?" H 7400 4750 50  0000 L CNN
-F 1 "2N7002" H 7400 4650 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7350 4700 50  0001 C CNN
-F 3 "https://lcsc.com/product-detail/MOSFET_Changjiang-Electronics-Tech-CJ-2N7002_C8545.html/?href=jlc-SMT" H 7150 4600 50  0001 C CNN
-F 4 "C8545" H 7150 4600 50  0001 C CNN "LCSC"
-	1    7150 4600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7250 4100 7250 4150
 Wire Wire Line
 	7250 4350 7250 4400
 $Comp
-L pace:100k R?
+L pace:100k R29
 U 1 1 5FF35D92
 P 6100 4000
-F 0 "R?" H 5900 4050 50  0000 L CNN
+F 0 "R29" H 5900 4050 50  0000 L CNN
 F 1 "100k" H 5850 3950 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 6100 4000 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 6100 4000 50  0001 C CNN
@@ -1835,11 +1660,11 @@ $EndComp
 Text Notes 4950 4900 0    50   ~ 0
 led's enabled by default\nforced off by driving low
 $Comp
-L pace:AO4407A_new Q?
+L pace:AO4407A_new Q6
 U 1 1 5FFE5195
 P 4900 3100
-F 0 "Q?" V 4750 3300 50  0000 C CNN
-F 1 "AO4407A_new" V 4650 3500 50  0000 C CNN
+F 0 "Q6" V 4800 3400 50  0000 C CNN
+F 1 "AO4407A_new" V 4700 3600 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5100 3200 50  0001 C CNN
 F 3 "https://jlcpcb.com/parts/componentSearch?searchTxt=ao4407" H 4900 3100 50  0001 C CNN
 F 4 "C16072" H 4900 3100 50  0001 C CNN "LCSC"
@@ -1853,10 +1678,10 @@ Vraw_for_5v
 Wire Wire Line
 	5100 3000 5200 3000
 $Comp
-L pace:100 R?
+L pace:100 R28
 U 1 1 60077714
 P 5850 4600
-F 0 "R?" V 5654 4600 50  0000 C CNN
+F 0 "R28" V 5654 4600 50  0000 C CNN
 F 1 "100" V 5745 4600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 5850 4600 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 5850 4600 50  0001 C CNN
@@ -1871,10 +1696,10 @@ nCHRG
 Text GLabel 1800 3050 0    50   Input ~ 0
 nSTDBY
 $Comp
-L pace:100k R?
+L pace:100k R1
 U 1 1 600D08F4
 P 900 3200
-F 0 "R?" H 600 3250 50  0000 L CNN
+F 0 "R1" H 600 3250 50  0000 L CNN
 F 1 "100k" H 600 3150 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 900 3200 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 900 3200 50  0001 C CNN
@@ -1888,10 +1713,10 @@ Connection ~ 1750 2750
 Connection ~ 1150 2750
 Connection ~ 900  2750
 $Comp
-L pace:100 R?
+L pace:100 R27
 U 1 1 6010D393
 P 4900 3400
-F 0 "R?" H 4959 3446 50  0000 L CNN
+F 0 "R27" H 4959 3446 50  0000 L CNN
 F 1 "100" H 4959 3355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 4900 3400 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 4900 3400 50  0001 C CNN
@@ -1941,7 +1766,7 @@ Wire Wire Line
 Text GLabel 1100 2550 2    50   Input ~ 0
 Vcharge
 Wire Wire Line
-	2100 2350 900  2350
+	2100 2350 1250 2350
 Wire Wire Line
 	1100 2550 900  2550
 Wire Wire Line
@@ -2018,13 +1843,11 @@ Vraw_for_5v
 Wire Wire Line
 	950  6800 1050 6800
 Connection ~ 1050 6800
-Text Notes 600  1650 0    50   ~ 0
-If 5v desired,\nmin Vin TBD
 $Comp
-L pace:100k R?
+L pace:100k R11
 U 1 1 6047F885
 P 2950 7250
-F 0 "R?" H 3009 7296 50  0000 L CNN
+F 0 "R11" H 3009 7296 50  0000 L CNN
 F 1 "100k" H 3009 7205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 2950 7250 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 2950 7250 50  0001 C CNN
@@ -2037,10 +1860,10 @@ Wire Wire Line
 Wire Wire Line
 	2950 7650 2950 7750
 $Comp
-L pace:10k R?
+L pace:10k R26
 U 1 1 604B92C9
 P 2950 7550
-F 0 "R?" H 3009 7596 50  0000 L CNN
+F 0 "R26" H 3009 7596 50  0000 L CNN
 F 1 "10k" H 3009 7505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 2950 7550 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 2950 7550 50  0001 C CNN
@@ -2048,8 +1871,405 @@ F 4 "C25744" H 2950 7550 50  0001 C CNN "LCSC"
 	1    2950 7550
 	1    0    0    -1  
 $EndComp
-Text GLabel 9650 2700 2    50   Input ~ 0
+Text GLabel 9650 2400 2    50   Input ~ 0
 ENABLE_STATUS
-Text GLabel 9650 2800 2    50   Input ~ 0
+Text GLabel 9650 2000 2    50   Input ~ 0
 DISABLE_5v
+$Comp
+L Connector:Conn_01x03_Male J6
+U 1 1 5FC6ED12
+P 3800 4850
+F 0 "J6" H 3900 5150 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 3908 5040 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3800 4850 50  0001 C CNN
+F 3 "~" H 3800 4850 50  0001 C CNN
+	1    3800 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC82982
+P 4000 5100
+F 0 "#PWR?" H 4000 4850 50  0001 C CNN
+F 1 "GND" H 4005 4927 50  0000 C CNN
+F 2 "" H 4000 5100 50  0001 C CNN
+F 3 "" H 4000 5100 50  0001 C CNN
+	1    4000 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4950 4000 5100
+Wire Wire Line
+	4000 4850 4150 4850
+Connection ~ 4250 4850
+Wire Wire Line
+	4000 4750 4000 4650
+Wire Wire Line
+	4000 4650 3400 4650
+Connection ~ 3400 4650
+Text Notes 3650 4400 0    50   ~ 0
+temporary header\nin case power supply\ndoesn't work\n
+Text GLabel 9650 1600 2    50   Input ~ 0
+WIFI
+$Comp
+L pace:BSS138K Q7
+U 1 1 5FD52255
+P 6350 4600
+F 0 "Q7" H 6554 4646 50  0000 L CNN
+F 1 "BSS138K" H 6554 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6550 4700 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 6350 4600 50  0001 C CNN
+F 4 "C255592" H 6350 4600 50  0001 C CNN "LCSC"
+	1    6350 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L pace:BSS138K Q8
+U 1 1 5FD52A2E
+P 7150 4600
+F 0 "Q8" H 7354 4646 50  0000 L CNN
+F 1 "BSS138K" H 7354 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7350 4700 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 7150 4600 50  0001 C CNN
+F 4 "C255592" H 7150 4600 50  0001 C CNN "LCSC"
+	1    7150 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FD5F0B1
+P 1250 2350
+F 0 "#FLG?" H 1250 2425 50  0001 C CNN
+F 1 "PWR_FLAG" H 1250 2523 50  0001 C CNN
+F 2 "" H 1250 2350 50  0001 C CNN
+F 3 "~" H 1250 2350 50  0001 C CNN
+	1    1250 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 1250 2350
+Wire Wire Line
+	1250 2350 900  2350
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FD64FF3
+P 4150 4850
+F 0 "#FLG?" H 4150 4925 50  0001 C CNN
+F 1 "PWR_FLAG" H 4150 5023 50  0001 C CNN
+F 2 "" H 4150 4850 50  0001 C CNN
+F 3 "~" H 4150 4850 50  0001 C CNN
+	1    4150 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 4850
+Wire Wire Line
+	4150 4850 4250 4850
+Text GLabel 9650 2500 2    50   Input ~ 0
+SPI_CS1
+Wire Wire Line
+	8150 6800 8200 6800
+Wire Wire Line
+	8200 6800 8200 7050
+Text GLabel 9650 2200 2    50   Input ~ 0
+IO0
+Text GLabel 9650 2600 2    50   Input ~ 0
+IO2
+Text GLabel 9650 3600 2    50   Input ~ 0
+IO3
+$Comp
+L pace:pushbutton_switch SW1
+U 1 1 5FFD3C10
+P 8700 7500
+F 0 "SW1" V 8700 7452 50  0000 R CNN
+F 1 "pushbutton_switch" H 8700 7440 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 8700 7700 50  0001 C CNN
+F 3 "~" H 8700 7700 50  0001 C CNN
+	1    8700 7500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8700 7700
+$Comp
+L pace:pushbutton_switch SW2
+U 1 1 5FFDB1A5
+P 9750 7550
+F 0 "SW2" V 9750 7502 50  0000 R CNN
+F 1 "pushbutton_switch" H 9750 7490 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 9750 7750 50  0001 C CNN
+F 3 "~" H 9750 7750 50  0001 C CNN
+	1    9750 7550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9750 7350
+$Comp
+L pace:jst_battery J4
+U 1 1 60055E25
+P 3450 2950
+F 0 "J4" H 3558 3039 50  0000 C CNN
+F 1 "jst_battery" H 3558 3040 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 3450 2950 50  0001 C CNN
+F 3 "~" H 3450 2950 50  0001 C CNN
+	1    3450 2950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9650 3800
+Wire Wire Line
+	6150 7800 6400 7800
+Wire Wire Line
+	6400 7800 6400 7700
+Wire Wire Line
+	4900 7100 4900 7050
+$Comp
+L pace:1u C23
+U 1 1 5FDD2C56
+P 5300 7200
+F 0 "C23" H 5392 7246 50  0000 L CNN
+F 1 "1u" H 5392 7155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5300 7200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf" H 5300 7200 50  0001 C CNN
+F 4 "C52923" H 5300 7200 50  0001 C CNN "LCSC"
+	1    5300 7200
+	1    0    0    -1  
+$EndComp
+Connection ~ 5300 7100
+Wire Wire Line
+	5300 7100 4900 7100
+$Comp
+L pace:100n C21
+U 1 1 5FDD38F2
+P 4900 7200
+F 0 "C21" H 4992 7246 50  0000 L CNN
+F 1 "100n" H 4992 7155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4900 7200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf" H 4900 7200 50  0001 C CNN
+F 4 "C1525" H 4900 7200 50  0001 C CNN "LCSC"
+	1    4900 7200
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 7100
+Wire Wire Line
+	5300 7100 5600 7100
+Wire Wire Line
+	5950 7200 5600 7200
+$Comp
+L power:GND #PWR?
+U 1 1 5FE4F1D9
+P 4900 7300
+F 0 "#PWR?" H 4900 7050 50  0001 C CNN
+F 1 "GND" H 4905 7127 50  0000 C CNN
+F 2 "" H 4900 7300 50  0001 C CNN
+F 3 "" H 4900 7300 50  0001 C CNN
+	1    4900 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE4F5F4
+P 5300 7300
+F 0 "#PWR?" H 5300 7050 50  0001 C CNN
+F 1 "GND" H 5305 7127 50  0000 C CNN
+F 2 "" H 5300 7300 50  0001 C CNN
+F 3 "" H 5300 7300 50  0001 C CNN
+	1    5300 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FE8137C
+P 6050 1050
+F 0 "H1" H 6150 1050 50  0000 L CNN
+F 1 "MountingHole" H 6150 1005 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6050 1050 50  0001 C CNN
+F 3 "~" H 6050 1050 50  0001 C CNN
+	1    6050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5FE81ECE
+P 6350 1050
+F 0 "H3" H 6450 1050 50  0000 L CNN
+F 1 "MountingHole" H 6450 1005 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6350 1050 50  0001 C CNN
+F 3 "~" H 6350 1050 50  0001 C CNN
+	1    6350 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FE824CC
+P 6050 1250
+F 0 "H2" H 6150 1250 50  0000 L CNN
+F 1 "MountingHole" H 6150 1205 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6050 1250 50  0001 C CNN
+F 3 "~" H 6050 1250 50  0001 C CNN
+	1    6050 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5FE82AB0
+P 6350 1250
+F 0 "H4" H 6450 1250 50  0000 L CNN
+F 1 "MountingHole" H 6450 1205 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6350 1250 50  0001 C CNN
+F 3 "~" H 6350 1250 50  0001 C CNN
+	1    6350 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 7200 5600 7100
+Connection ~ 5600 7100
+Wire Wire Line
+	5600 7100 5950 7100
+$Comp
+L pace:330pF C22
+U 1 1 5FEE79F6
+P 7600 1800
+F 0 "C22" V 7371 1800 50  0000 C CNN
+F 1 "330pF" V 7462 1800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7600 1800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf" H 7600 1800 50  0001 C CNN
+F 4 "C13533" H 7600 1800 50  0001 C CNN "LCSC"
+	1    7600 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L pace:330pF C24
+U 1 1 5FEE9D8D
+P 7600 2100
+F 0 "C24" V 7700 2100 50  0000 C CNN
+F 1 "330pF" V 7800 2100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7600 2100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf" H 7600 2100 50  0001 C CNN
+F 4 "C13533" H 7600 2100 50  0001 C CNN "LCSC"
+	1    7600 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8050 1800 7700 1800
+Wire Wire Line
+	7500 1800 7500 1900
+Wire Wire Line
+	7500 1900 8050 1900
+Wire Wire Line
+	8050 2100 7700 2100
+Wire Wire Line
+	7500 2100 7500 2000
+Wire Wire Line
+	7500 2000 8050 2000
+Text GLabel 9650 4000 2    50   Input ~ 0
+ADC0
+Text GLabel 9650 4100 2    50   Input ~ 0
+ADC1
+$Comp
+L pace:100k R12
+U 1 1 5FF4103D
+P 6200 1850
+F 0 "R12" H 6259 1896 50  0000 L CNN
+F 1 "100k" H 6259 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6200 1850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 6200 1850 50  0001 C CNN
+F 4 "C25741" H 6200 1850 50  0001 C CNN "LCSC"
+	1    6200 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L pace:100k R13
+U 1 1 5FF4202A
+P 6200 2150
+F 0 "R13" H 6259 2196 50  0000 L CNN
+F 1 "100k" H 6259 2105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6200 2150 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 6200 2150 50  0001 C CNN
+F 4 "C25741" H 6200 2150 50  0001 C CNN "LCSC"
+	1    6200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pace:100k R14
+U 1 1 5FF42467
+P 6200 2750
+F 0 "R14" H 6259 2796 50  0000 L CNN
+F 1 "100k" H 6259 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6200 2750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 6200 2750 50  0001 C CNN
+F 4 "C25741" H 6200 2750 50  0001 C CNN "LCSC"
+	1    6200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pace:100k R42
+U 1 1 5FF484CD
+P 6200 3050
+F 0 "R42" H 6259 3096 50  0000 L CNN
+F 1 "100k" H 6259 3005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6200 3050 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 6200 3050 50  0001 C CNN
+F 4 "C25741" H 6200 3050 50  0001 C CNN "LCSC"
+	1    6200 3050
+	1    0    0    -1  
+$EndComp
+Text GLabel 6050 1700 0    50   Input ~ 0
+Vin
+Text GLabel 6000 2550 0    50   Input ~ 0
+Vraw
+Wire Wire Line
+	6050 1700 6200 1700
+Wire Wire Line
+	6200 1700 6200 1750
+Wire Wire Line
+	6200 1950 6200 2000
+$Comp
+L power:GND #PWR?
+U 1 1 5FF7E1BE
+P 6200 2250
+F 0 "#PWR?" H 6200 2000 50  0001 C CNN
+F 1 "GND" H 6205 2077 50  0000 C CNN
+F 2 "" H 6200 2250 50  0001 C CNN
+F 3 "" H 6200 2250 50  0001 C CNN
+	1    6200 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2550 6200 2550
+Wire Wire Line
+	6200 2550 6200 2650
+Wire Wire Line
+	6200 2850 6200 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5FF9C137
+P 6200 3150
+F 0 "#PWR?" H 6200 2900 50  0001 C CNN
+F 1 "GND" H 6205 2977 50  0000 C CNN
+F 2 "" H 6200 3150 50  0001 C CNN
+F 3 "" H 6200 3150 50  0001 C CNN
+	1    6200 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 2000 2    50   Input ~ 0
+ADC0
+Wire Wire Line
+	6500 2000 6200 2000
+Connection ~ 6200 2000
+Wire Wire Line
+	6200 2000 6200 2050
+Text GLabel 6500 2900 2    50   Input ~ 0
+ADC1
+Wire Wire Line
+	6500 2900 6200 2900
+Connection ~ 6200 2900
+Wire Wire Line
+	6200 2900 6200 2950
+Text Notes 11700 3150 0    50   ~ 0
+strapping
+Text Notes 11700 3250 0    50   ~ 0
+strapping
+Text Notes 11700 3350 0    50   ~ 0
+strapping
+Text Notes 11700 3000 0    50   ~ 0
+strapping
+Text Notes 11700 2900 0    50   ~ 0
+strapping
+Text GLabel 9650 2700 2    50   Input ~ 0
+IO1
 $EndSCHEMATC

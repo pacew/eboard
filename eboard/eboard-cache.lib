@@ -70,35 +70,6 @@ X Pin_4 4 200 -200 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Conn_01x05_Male
-#
-DEF Connector_Conn_01x05_Male J 0 40 Y N 1 F N
-F0 "J" 0 300 50 H V C CNN
-F1 "Connector_Conn_01x05_Male" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S 34 -195 0 -205 1 1 6 F
-S 34 -95 0 -105 1 1 6 F
-S 34 5 0 -5 1 1 6 F
-S 34 105 0 95 1 1 6 F
-S 34 205 0 195 1 1 6 F
-P 2 1 1 6 50 -200 34 -200 N
-P 2 1 1 6 50 -100 34 -100 N
-P 2 1 1 6 50 0 34 0 N
-P 2 1 1 6 50 100 34 100 N
-P 2 1 1 6 50 200 34 200 N
-X Pin_1 1 200 200 150 L 50 50 1 1 P
-X Pin_2 2 200 100 150 L 50 50 1 1 P
-X Pin_3 3 200 0 150 L 50 50 1 1 P
-X Pin_4 4 200 -100 150 L 50 50 1 1 P
-X Pin_5 5 200 -200 150 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_Conn_01x06_Male
 #
 DEF Connector_Conn_01x06_Male J 0 40 Y N 1 F N
@@ -167,20 +138,39 @@ X Shield 6 -100 -400 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_Push
+# Device_Antenna_Shield
 #
-DEF Switch_SW_Push SW 0 40 N N 1 F N
-F0 "SW" 50 100 50 H V L CNN
-F1 "Switch_SW_Push" 0 -60 50 H V C CNN
-F2 "" 0 200 50 H I C CNN
-F3 "" 0 200 50 H I C CNN
+DEF Device_Antenna_Shield AE 0 40 N N 1 F N
+F0 "AE" -75 175 50 H V R CNN
+F1 "Device_Antenna_Shield" -75 100 50 H V R CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
 DRAW
-C -80 0 20 0 1 0 N
-C 80 0 20 0 1 0 N
-P 2 0 1 0 0 50 0 120 N
-P 2 0 1 0 100 50 -100 50 N
-X 1 1 -200 0 100 R 50 50 0 1 P
-X 2 2 200 0 100 L 50 50 0 1 P
+A -1 -73 32 -882 1242 0 1 0 N 0 -105 -20 -45
+A 1 -73 32 -918 558 0 1 0 N 0 -105 20 -45
+C 30 -75 7 0 1 0 F
+P 2 0 1 0 0 -100 0 0 N
+P 2 0 1 10 0 200 0 -150 N
+P 2 0 1 0 30 -75 100 -75 N
+P 2 0 1 0 100 -100 100 -75 N
+P 3 0 1 10 50 200 0 0 -50 200 N
+X A 1 0 -200 100 U 50 50 1 1 I
+X Shield 2 100 -200 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
@@ -312,6 +302,25 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# pace_1u
+#
+DEF pace_1u C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "pace_1u" 10 -80 50 H V L CNN
+F2 "Capacitor_SMD:C_0402_1005Metric" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "C52923" 0 0 50 H I C CNN "LCSC"
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # pace_2.2pF
 #
 DEF pace_2.2pF C 0 10 N N 1 F N
@@ -353,35 +362,6 @@ X 2 2 100 0 20 L 40 45 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pace_2N7002
-#
-DEF pace_2N7002 Q 0 0 Y N 1 F N
-F0 "Q" 200 50 50 H V L CNN
-F1 "pace_2N7002" 200 -50 50 H V L CNN
-F2 "Package_TO_SOT_SMD:SOT-23" 200 100 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "C8545" 0 0 50 H I C CNN "LCSC"
-DRAW
-C 65 0 110 0 1 10 N
-C 100 -70 10 0 1 0 F
-C 100 70 10 0 1 0 F
-P 2 0 1 0 10 0 -100 0 N
-P 2 0 1 10 10 75 10 -75 N
-P 2 0 1 10 30 -50 30 -90 N
-P 2 0 1 10 30 20 30 -20 N
-P 2 0 1 10 30 90 30 50 N
-P 2 0 1 0 100 100 100 70 N
-P 3 0 1 0 100 -100 100 0 30 0 N
-P 4 0 1 0 30 -70 130 -70 130 70 30 70 N
-P 4 0 1 0 40 0 80 15 80 -15 40 0 F
-P 4 0 1 0 110 20 115 15 145 15 150 10 N
-P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
-X G 1 -200 0 100 R 50 50 1 1 I
-X S 2 100 -200 100 U 50 50 1 1 P
-X D 3 100 200 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # pace_3.3k
 #
 DEF pace_3.3k R 0 10 N N 1 F N
@@ -397,6 +377,25 @@ DRAW
 S -30 70 30 -70 0 1 8 N
 X ~ 1 0 100 30 D 50 50 1 1 P
 X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# pace_330pF
+#
+DEF pace_330pF C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "pace_330pF" 10 -80 50 H V L CNN
+F2 "Capacitor_SMD:C_0402_1005Metric" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "C13533" 0 0 50 H I C CNN "LCSC"
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -522,6 +521,14 @@ $FPLIST
  QFN*1EP*7x7mm*P0.5mm*
 $ENDFPLIST
 DRAW
+T 0 400 1200 50 0 0 0 boot0 Normal 0 C C
+T 0 -400 800 50 0 0 0 "input only" Normal 0 C C
+T 0 250 -1100 50 0 0 0 "input only" Normal 0 C C
+T 0 250 -1000 50 0 0 0 "input only" Normal 0 C C
+T 0 200 100 50 0 0 0 "strapping: hi" Normal 0 C C
+T 0 200 700 50 0 0 0 "strapping: hi" Normal 0 C C
+T 0 200 400 50 0 0 0 "strapping: low" Normal 0 C C
+T 0 250 1000 50 0 0 0 "strapping: low" Normal 0 C C
 S -700 1500 700 -1500 0 1 10 f
 X VDDA 1 -200 1600 100 D 50 50 0 0 W
 X IO34 10 800 -1000 100 L 50 50 0 0 I
@@ -751,6 +758,26 @@ X ~ 2 0 -100 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# pace_jst_battery
+#
+DEF pace_jst_battery J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "pace_jst_battery" 0 -200 50 H V C CNN
+F2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
+X Pin_2 2 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # pace_ledgreen
 #
 DEF pace_ledgreen D 0 10 N N 1 F N
@@ -796,6 +823,23 @@ P 5 0 1 0 0 30 -20 50 -10 50 -20 50 -20 40 N
 P 5 0 1 0 20 50 0 70 10 70 0 70 0 60 N
 X K 1 -100 0 70 R 50 50 1 1 P
 X A 2 100 0 70 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# pace_pushbutton_switch
+#
+DEF pace_pushbutton_switch SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "pace_pushbutton_switch" 0 -60 50 H I C CNN
+F2 "Button_Switch_THT:SW_PUSH_6mm" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
