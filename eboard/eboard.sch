@@ -349,7 +349,7 @@ F 1 "Conn_01x03_Male" V 2353 2694 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2200 2550 50  0001 C CNN
 F 3 "~" H 2200 2550 50  0001 C CNN
 	1    2200 2550
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 Text GLabel 1900 2150 0    50   Input ~ 0
 Vin
@@ -397,99 +397,97 @@ Wire Wire Line
 $Comp
 L pace:1meg R6
 U 1 1 5FA96672
-P 3000 4800
-F 0 "R6" H 3059 4846 50  0000 L CNN
-F 1 "1meg" H 3059 4755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3000 4800 50  0001 C CNN
-F 3 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Uniroyal-Elec-0603WAF1004T5E_C22935.html/?href=jlc-SMT" H 3000 4800 50  0001 C CNN
-F 4 "C22935" H 3000 4800 50  0001 C CNN "LCSC"
-	1    3000 4800
+P 2900 4800
+F 0 "R6" H 2959 4846 50  0000 L CNN
+F 1 "1meg" H 2959 4755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2900 4800 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Uniroyal-Elec-0603WAF1004T5E_C22935.html/?href=jlc-SMT" H 2900 4800 50  0001 C CNN
+F 4 "C22935" H 2900 4800 50  0001 C CNN "LCSC"
+	1    2900 4800
 	1    0    0    -1  
 $EndComp
 $Comp
 L pace:180k R7
 U 1 1 5FA97E48
-P 3000 5100
-F 0 "R7" H 3059 5146 50  0000 L CNN
-F 1 "180k" H 3059 5055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3000 5100 50  0001 C CNN
-F 3 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Uniroyal-Elec-0603WAF1803T5E_C22827.html/?href=jlc-SMT" H 3000 5100 50  0001 C CNN
-F 4 "C22827" H 3000 5100 50  0001 C CNN "LCSC"
-	1    3000 5100
+P 2900 5100
+F 0 "R7" H 2959 5146 50  0000 L CNN
+F 1 "180k" H 2959 5055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2900 5100 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Uniroyal-Elec-0603WAF1803T5E_C22827.html/?href=jlc-SMT" H 2900 5100 50  0001 C CNN
+F 4 "C22827" H 2900 5100 50  0001 C CNN "LCSC"
+	1    2900 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 4650 3000 4650
+	2600 4650 2900 4650
 Wire Wire Line
-	3000 4650 3000 4700
+	2900 4650 2900 4700
 Wire Wire Line
-	3000 4900 3000 4950
+	2900 4900 2900 4950
 $Comp
 L power:GND #PWR?
 U 1 1 5FAA312D
-P 3000 5200
-F 0 "#PWR?" H 3000 4950 50  0001 C CNN
-F 1 "GND" H 3005 5027 50  0000 C CNN
-F 2 "" H 3000 5200 50  0001 C CNN
-F 3 "" H 3000 5200 50  0001 C CNN
-	1    3000 5200
+P 2900 5200
+F 0 "#PWR?" H 2900 4950 50  0001 C CNN
+F 1 "GND" H 2905 5027 50  0000 C CNN
+F 2 "" H 2900 5200 50  0001 C CNN
+F 3 "" H 2900 5200 50  0001 C CNN
+	1    2900 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 4850 2800 4850
+	2600 4850 2750 4850
 Wire Wire Line
-	2800 4850 2800 4950
+	2750 4850 2750 4950
 Wire Wire Line
-	2800 4950 3000 4950
-Connection ~ 3000 4950
+	2750 4950 2900 4950
+Connection ~ 2900 4950
 Wire Wire Line
-	3000 4950 3000 5000
+	2900 4950 2900 5000
 Text Notes 2600 5700 0    50   ~ 0
 3.28v nominal\nwith 1% reisistors: 3.00 to 3.33v 
 $Comp
 L pace:2.2pF C12
 U 1 1 5FAAD83F
-P 3400 4800
-F 0 "C12" H 3492 4846 50  0000 L CNN
-F 1 "2.2pF" H 3492 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3400 4800 50  0001 C CNN
-F 3 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_2-2pF-2R2-0-25pF-50V_C1559.html/?href=jlc-SMT" H 3400 4800 50  0001 C CNN
-F 4 "C1559" H 3400 4800 50  0001 C CNN "LCSC"
-	1    3400 4800
+P 3250 4800
+F 0 "C12" H 3342 4846 50  0000 L CNN
+F 1 "2.2pF" H 3342 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3250 4800 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_2-2pF-2R2-0-25pF-50V_C1559.html/?href=jlc-SMT" H 3250 4800 50  0001 C CNN
+F 4 "C1559" H 3250 4800 50  0001 C CNN "LCSC"
+	1    3250 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 4650 3400 4650
+	2900 4650 3250 4650
 Wire Wire Line
-	3400 4650 3400 4700
-Connection ~ 3000 4650
+	3250 4650 3250 4700
+Connection ~ 2900 4650
 Wire Wire Line
-	3000 4950 3400 4950
+	2900 4950 3250 4950
 Wire Wire Line
-	3400 4950 3400 4900
+	3250 4950 3250 4900
 $Comp
 L pace:10u C14
 U 1 1 5FAB3458
-P 4250 5000
-F 0 "C14" H 4342 5046 50  0000 L CNN
-F 1 "10u" H 4342 4955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 4250 5000 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf" H 4250 5000 50  0001 C CNN
-F 4 "C15525" H 4250 5000 50  0001 C CNN "LCSC"
-	1    4250 5000
+P 3650 5100
+F 0 "C14" H 3742 5146 50  0000 L CNN
+F 1 "10u" H 3742 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3650 5100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf" H 3650 5100 50  0001 C CNN
+F 4 "C15525" H 3650 5100 50  0001 C CNN "LCSC"
+	1    3650 5100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4250 4850 4250 4900
 $Comp
 L power:GND #PWR?
 U 1 1 5FAB6079
-P 4250 5100
-F 0 "#PWR?" H 4250 4850 50  0001 C CNN
-F 1 "GND" H 4255 4927 50  0000 C CNN
-F 2 "" H 4250 5100 50  0001 C CNN
-F 3 "" H 4250 5100 50  0001 C CNN
-	1    4250 5100
+P 3650 5200
+F 0 "#PWR?" H 3650 4950 50  0001 C CNN
+F 1 "GND" H 3655 5027 50  0000 C CNN
+F 2 "" H 3650 5200 50  0001 C CNN
+F 3 "" H 3650 5200 50  0001 C CNN
+	1    3650 5200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -503,8 +501,6 @@ F 3 "" H 4550 4700 50  0001 C CNN
 	1    4550 4700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4250 4850 4550 4850
 Wire Wire Line
 	4550 4850 4550 4700
 $Comp
@@ -1901,12 +1897,11 @@ Wire Wire Line
 	4000 4950 4000 5100
 Wire Wire Line
 	4000 4850 4150 4850
-Connection ~ 4250 4850
 Wire Wire Line
 	4000 4750 4000 4650
 Wire Wire Line
-	4000 4650 3400 4650
-Connection ~ 3400 4650
+	4000 4650 3650 4650
+Connection ~ 3250 4650
 Text Notes 3650 4400 0    50   ~ 0
 temporary header\nin case power supply\ndoesn't work\n
 Text GLabel 9650 1600 2    50   Input ~ 0
@@ -1961,8 +1956,6 @@ F 3 "~" H 4150 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4150 4850
-Wire Wire Line
-	4150 4850 4250 4850
 Text GLabel 9650 2500 2    50   Input ~ 0
 SPI_CS1
 Wire Wire Line
@@ -2156,9 +2149,9 @@ Wire Wire Line
 	7500 2100 7500 2000
 Wire Wire Line
 	7500 2000 8050 2000
-Text GLabel 9650 4000 2    50   Input ~ 0
-ADC0
 Text GLabel 9650 4100 2    50   Input ~ 0
+ADC0
+Text GLabel 9650 4000 2    50   Input ~ 0
 ADC1
 $Comp
 L pace:100k R12
@@ -2272,4 +2265,11 @@ Text Notes 11700 2900 0    50   ~ 0
 strapping
 Text GLabel 9650 2700 2    50   Input ~ 0
 IO1
+Wire Wire Line
+	4150 4850 4550 4850
+Wire Wire Line
+	3650 5000 3650 4650
+Connection ~ 3650 4650
+Wire Wire Line
+	3650 4650 3250 4650
 $EndSCHEMATC
