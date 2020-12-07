@@ -912,6 +912,7 @@ F 0 "U2" H 2200 5517 50  0000 C CNN
 F 1 "TPS63000" H 2200 5426 50  0000 C CNN
 F 2 "Package_SON:Texas_DRC0010J_ThermalVias" H 3050 4300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps63000.pdf" H 1900 5400 50  0001 C CNN
+F 4 "C24966" H 2200 4850 50  0001 C CNN "LCSC"
 	1    2200 4850
 	1    0    0    -1  
 $EndComp
@@ -1514,6 +1515,7 @@ F 0 "U6" H 2150 7667 50  0000 C CNN
 F 1 "TPS63000" H 2150 7576 50  0000 C CNN
 F 2 "Package_SON:Texas_DRC0010J_ThermalVias" H 3000 6450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps63000.pdf" H 1850 7550 50  0001 C CNN
+F 4 "C24966" H 2150 7000 50  0001 C CNN "LCSC"
 	1    2150 7000
 	1    0    0    -1  
 $EndComp
