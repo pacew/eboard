@@ -645,7 +645,7 @@ Lithium battery charger
 Text Notes 1750 5950 0    50   ~ 0
 dc-dc converter / regulator
 Text Notes 2350 2250 0    50   ~ 0
-Connect 1-2: lithium battery with recharge\nConnect 2-3: external DC supply (usb or header)
+Connect 1-2: external DC supply (usb or header)\nConnect 2-3: lithium battery with recharge
 Wire Wire Line
 	4650 700  4500 700 
 Connection ~ 4500 700 
