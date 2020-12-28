@@ -615,7 +615,7 @@ F 4 "C15525" H 1100 4950 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 4650 1100 4650
+	1800 4650 1450 4650
 Wire Wire Line
 	1100 4650 1100 4850
 $Comp
@@ -1079,11 +1079,11 @@ Wire Wire Line
 	8200 7550 8200 7650
 Text GLabel 9650 1800 2    50   Input ~ 0
 BOOT0
-Text GLabel 7000 5750 2    50   Input ~ 0
+Text GLabel 7000 5650 2    50   Input ~ 0
 RXD
 Text GLabel 7000 5850 2    50   Input ~ 0
 RTS
-Text GLabel 7000 5650 2    50   Input ~ 0
+Text GLabel 7000 5750 2    50   Input ~ 0
 TXD
 Wire Wire Line
 	7000 5850 6750 5850
@@ -1569,22 +1569,11 @@ $EndComp
 Connection ~ 2100 900 
 Wire Wire Line
 	2100 900  1900 900 
-$Comp
-L pace:PWR_FLAG #FLG?
-U 1 1 5FE5E012
-P 1450 4550
-F 0 "#FLG?" H 1450 4625 50  0001 C CNN
-F 1 "PWR_FLAG" H 1450 4723 50  0001 C CNN
-F 2 "" H 1450 4550 50  0001 C CNN
-F 3 "~" H 1450 4550 50  0001 C CNN
-	1    1450 4550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1450 4750 1450 4550
+	1450 4750 1450 4650
 Connection ~ 1450 4750
 Wire Wire Line
-	1050 6800 1750 6800
+	1050 6800 1400 6800
 NoConn ~ 4000 1500
 NoConn ~ 5000 1300
 Text GLabel 9650 3400 2    50   Input ~ 0
@@ -1824,18 +1813,7 @@ Wire Wire Line
 	6450 4400 6450 4350
 Connection ~ 1400 6900
 Wire Wire Line
-	1400 6750 1400 6900
-$Comp
-L pace:PWR_FLAG #FLG?
-U 1 1 5FE6C363
-P 1400 6750
-F 0 "#FLG?" H 1400 6825 50  0001 C CNN
-F 1 "PWR_FLAG" H 1400 6923 50  0001 C CNN
-F 2 "" H 1400 6750 50  0001 C CNN
-F 3 "~" H 1400 6750 50  0001 C CNN
-	1    1400 6750
-	1    0    0    -1  
-$EndComp
+	1400 6800 1400 6900
 Text GLabel 950  6800 0    50   Input ~ 0
 Vraw_for_5v
 Wire Wire Line
@@ -2071,8 +2049,8 @@ L pace:MountingHole_Pad H1
 U 1 1 5FE8137C
 P 6050 1050
 F 0 "H1" H 6150 1050 50  0000 L CNN
-F 1 "MountingHole" H 6150 1005 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6050 1050 50  0001 C CNN
+F 1 "MountingHole_Pad" H 6150 1005 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 6050 1050 50  0001 C CNN
 F 3 "~" H 6050 1050 50  0001 C CNN
 	1    6050 1050
 	1    0    0    -1  
@@ -2082,8 +2060,8 @@ L pace:MountingHole_Pad H3
 U 1 1 5FE81ECE
 P 6650 1050
 F 0 "H3" H 6750 1050 50  0000 L CNN
-F 1 "MountingHole" H 6750 1005 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6650 1050 50  0001 C CNN
+F 1 "MountingHole_Pad" H 6750 1005 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 6650 1050 50  0001 C CNN
 F 3 "~" H 6650 1050 50  0001 C CNN
 	1    6650 1050
 	1    0    0    -1  
@@ -2093,8 +2071,8 @@ L pace:MountingHole_Pad H2
 U 1 1 5FE824CC
 P 6350 1050
 F 0 "H2" H 6450 1050 50  0000 L CNN
-F 1 "MountingHole" H 6450 1005 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6350 1050 50  0001 C CNN
+F 1 "MountingHole_Pad" H 6450 1005 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 6350 1050 50  0001 C CNN
 F 3 "~" H 6350 1050 50  0001 C CNN
 	1    6350 1050
 	1    0    0    -1  
@@ -2104,8 +2082,8 @@ L pace:MountingHole_Pad H4
 U 1 1 5FE82AB0
 P 6950 1050
 F 0 "H4" H 7050 1050 50  0000 L CNN
-F 1 "MountingHole" H 7050 1005 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6950 1050 50  0001 C CNN
+F 1 "MountingHole_Pad" H 7050 1005 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 6950 1050 50  0001 C CNN
 F 3 "~" H 6950 1050 50  0001 C CNN
 	1    6950 1050
 	1    0    0    -1  
@@ -2294,4 +2272,12 @@ F 3 "" H 6050 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6050 1150
+Connection ~ 1450 4650
+Wire Wire Line
+	1450 4650 1100 4650
+Connection ~ 1400 6800
+Wire Wire Line
+	1400 6800 1750 6800
+Text Notes 7300 5750 0    50   ~ 0
+TX/RX reversed\non purpose
 $EndSCHEMATC
