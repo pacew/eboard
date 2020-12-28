@@ -335,10 +335,10 @@ F 3 "" H 4000 3050 50  0001 C CNN
 	1    4000 3050
 	1    0    0    -1  
 $EndComp
-Text GLabel 5250 2750 2    50   Input ~ 0
+Text GLabel 4300 2750 2    50   Input ~ 0
 Vraw
 Wire Wire Line
-	5250 2750 5200 2750
+	4300 2750 4200 2750
 Connection ~ 4000 2750
 $Comp
 L pace:Conn_01x03_Male J3
@@ -459,8 +459,6 @@ F 4 "C1559" H 3250 4800 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2900 4650 3250 4650
-Wire Wire Line
 	3250 4650 3250 4700
 Connection ~ 2900 4650
 Wire Wire Line
@@ -493,16 +491,14 @@ $EndComp
 $Comp
 L pace:+3.3V #PWR?
 U 1 1 5FAB8FC4
-P 4550 4700
-F 0 "#PWR?" H 4550 4550 50  0001 C CNN
-F 1 "+3.3V" H 4565 4873 50  0000 C CNN
-F 2 "" H 4550 4700 50  0001 C CNN
-F 3 "" H 4550 4700 50  0001 C CNN
-	1    4550 4700
+P 4000 4650
+F 0 "#PWR?" H 4000 4500 50  0001 C CNN
+F 1 "+3.3V" H 4015 4823 50  0000 C CNN
+F 2 "" H 4000 4650 50  0001 C CNN
+F 3 "" H 4000 4650 50  0001 C CNN
+	1    4000 4650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4550 4850 4550 4700
 $Comp
 L pace:GND #PWR?
 U 1 1 5FABD492
@@ -576,32 +572,6 @@ F 3 "" H 1450 5300 50  0001 C CNN
 	1    1450 5300
 	1    0    0    -1  
 $EndComp
-$Comp
-L pace:10u C15
-U 1 1 5FAE3142
-P 4550 5000
-F 0 "C15" H 4642 5046 50  0000 L CNN
-F 1 "10u" H 4642 4955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 4550 5000 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf" H 4550 5000 50  0001 C CNN
-F 4 "C15525" H 4550 5000 50  0001 C CNN "LCSC"
-	1    4550 5000
-	1    0    0    -1  
-$EndComp
-Connection ~ 4550 4850
-$Comp
-L pace:GND #PWR?
-U 1 1 5FAE3554
-P 4550 5100
-F 0 "#PWR?" H 4550 4850 50  0001 C CNN
-F 1 "GND" H 4555 4927 50  0000 C CNN
-F 2 "" H 4550 5100 50  0001 C CNN
-F 3 "" H 4550 5100 50  0001 C CNN
-	1    4550 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 4900 4550 4850
 $Comp
 L pace:10u C9
 U 1 1 5FAEC0DE
@@ -1259,277 +1229,6 @@ F 3 "" H 9000 7100 50  0001 C CNN
 	1    9000 7100
 	1    0    0    -1  
 $EndComp
-$Comp
-L pace:2.2uH L2
-U 1 1 5FAF89AE
-P 2150 6250
-F 0 "L2" H 2150 6437 60  0000 C CNB
-F 1 "2.2uH" H 2150 6346 40  0000 C CNN
-F 2 "Inductor_SMD:L_Coilcraft_XxL4020" H 2150 6120 40  0001 C CNN
-F 3 "https://lcsc.com/product-detail/Power-Inductors_cjiang-Changjiang-Microelectronics-Tech-FNR3015S2R2MT_C167747.html/?href=jlc-SMT" H 2150 6361 60  0001 C CNN
-F 4 "-" H 2150 6415 45  0001 C CNN "PART"
-F 5 "Passive" H 2380 6540 50  0001 C CNN "Family"
-F 6 "C167747" H 2150 6250 50  0001 C CNN "LCSC"
-	1    2150 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 6250 1700 6250
-Wire Wire Line
-	1700 6250 1700 6600
-Wire Wire Line
-	1700 6600 1750 6600
-Wire Wire Line
-	2250 6250 2600 6250
-Wire Wire Line
-	2600 6250 2600 6600
-Wire Wire Line
-	2600 6600 2550 6600
-$Comp
-L pace:1meg R10
-U 1 1 5FAF89BB
-P 2950 6950
-F 0 "R10" H 3009 6996 50  0000 L CNN
-F 1 "1meg" H 3009 6905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2950 6950 50  0001 C CNN
-F 3 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Uniroyal-Elec-0603WAF1004T5E_C22935.html/?href=jlc-SMT" H 2950 6950 50  0001 C CNN
-F 4 "C22935" H 2950 6950 50  0001 C CNN "LCSC"
-	1    2950 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 6800 2950 6800
-Wire Wire Line
-	2950 6800 2950 6850
-Wire Wire Line
-	2950 7050 2950 7100
-$Comp
-L pace:GND #PWR?
-U 1 1 5FAF89CB
-P 2950 7750
-F 0 "#PWR?" H 2950 7500 50  0001 C CNN
-F 1 "GND" H 2955 7577 50  0000 C CNN
-F 2 "" H 2950 7750 50  0001 C CNN
-F 3 "" H 2950 7750 50  0001 C CNN
-	1    2950 7750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 7000 2750 7000
-Wire Wire Line
-	2750 7000 2750 7100
-Wire Wire Line
-	2750 7100 2950 7100
-Connection ~ 2950 7100
-Wire Wire Line
-	2950 7100 2950 7150
-Text Notes 3250 7600 0    50   ~ 0
-5.05v nominal\nwith 1% reisistors: 4.59 to 5.14v
-$Comp
-L pace:2.2pF C17
-U 1 1 5FAF89D8
-P 3350 6950
-F 0 "C17" H 3442 6996 50  0000 L CNN
-F 1 "2.2pF" H 3442 6905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3350 6950 50  0001 C CNN
-F 3 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_2-2pF-2R2-0-25pF-50V_C1559.html/?href=jlc-SMT" H 3350 6950 50  0001 C CNN
-F 4 "C1559" H 3350 6950 50  0001 C CNN "LCSC"
-	1    3350 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 6800 3350 6800
-Wire Wire Line
-	3350 6800 3350 6850
-Connection ~ 2950 6800
-Wire Wire Line
-	2950 7100 3350 7100
-Wire Wire Line
-	3350 7100 3350 7050
-$Comp
-L pace:10u C18
-U 1 1 5FAF89E4
-P 3800 6950
-F 0 "C18" H 3892 6996 50  0000 L CNN
-F 1 "10u" H 3892 6905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3800 6950 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf" H 3800 6950 50  0001 C CNN
-F 4 "C15525" H 3800 6950 50  0001 C CNN "LCSC"
-	1    3800 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 6800 3800 6800
-Wire Wire Line
-	3800 6800 3800 6850
-Connection ~ 3350 6800
-$Comp
-L pace:GND #PWR?
-U 1 1 5FAF89ED
-P 3800 7050
-F 0 "#PWR?" H 3800 6800 50  0001 C CNN
-F 1 "GND" H 3805 6877 50  0000 C CNN
-F 2 "" H 3800 7050 50  0001 C CNN
-F 3 "" H 3800 7050 50  0001 C CNN
-	1    3800 7050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3800 6800 4100 6800
-Wire Wire Line
-	4100 6800 4100 6650
-Connection ~ 3800 6800
-$Comp
-L pace:GND #PWR?
-U 1 1 5FAF89FC
-P 2150 7700
-F 0 "#PWR?" H 2150 7450 50  0001 C CNN
-F 1 "GND" H 2155 7527 50  0000 C CNN
-F 2 "" H 2150 7700 50  0001 C CNN
-F 3 "" H 2150 7700 50  0001 C CNN
-	1    2150 7700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 7600 2150 7600
-Wire Wire Line
-	2150 7600 2300 7600
-Connection ~ 2150 7600
-Wire Wire Line
-	2150 7600 2150 7700
-Text Notes 2650 6550 0    50   ~ 0
-Includes short circuit\nprotection
-$Comp
-L pace:100 R9
-U 1 1 5FAF8A08
-P 1400 7100
-F 0 "R9" H 1459 7146 50  0000 L CNN
-F 1 "100" H 1459 7055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1400 7100 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 1400 7100 50  0001 C CNN
-F 4 "C25076" H 1400 7100 50  0001 C CNN "LCSC"
-	1    1400 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L pace:100n C16
-U 1 1 5FAF8A0F
-P 1400 7350
-F 0 "C16" H 1492 7396 50  0000 L CNN
-F 1 "100n" H 1492 7305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1400 7350 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf" H 1400 7350 50  0001 C CNN
-F 4 "C1525" H 1400 7350 50  0001 C CNN "LCSC"
-	1    1400 7350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 6900 1650 6900
-Wire Wire Line
-	1400 6900 1400 7000
-Wire Wire Line
-	1750 7200 1650 7200
-Wire Wire Line
-	1650 7200 1650 7000
-Connection ~ 1650 6900
-Wire Wire Line
-	1650 6900 1400 6900
-Wire Wire Line
-	1750 7000 1650 7000
-Connection ~ 1650 7000
-Wire Wire Line
-	1650 7000 1650 6900
-Wire Wire Line
-	1400 7200 1400 7250
-$Comp
-L pace:GND #PWR?
-U 1 1 5FAF8A1F
-P 1400 7450
-F 0 "#PWR?" H 1400 7200 50  0001 C CNN
-F 1 "GND" H 1405 7277 50  0000 C CNN
-F 2 "" H 1400 7450 50  0001 C CNN
-F 3 "" H 1400 7450 50  0001 C CNN
-	1    1400 7450
-	1    0    0    -1  
-$EndComp
-$Comp
-L pace:10u C19
-U 1 1 5FAF8A26
-P 4100 6950
-F 0 "C19" H 4192 6996 50  0000 L CNN
-F 1 "10u" H 4192 6905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 4100 6950 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf" H 4100 6950 50  0001 C CNN
-F 4 "C15525" H 4100 6950 50  0001 C CNN "LCSC"
-	1    4100 6950
-	1    0    0    -1  
-$EndComp
-Connection ~ 4100 6800
-$Comp
-L pace:GND #PWR?
-U 1 1 5FAF8A2D
-P 4100 7050
-F 0 "#PWR?" H 4100 6800 50  0001 C CNN
-F 1 "GND" H 4105 6877 50  0000 C CNN
-F 2 "" H 4100 7050 50  0001 C CNN
-F 3 "" H 4100 7050 50  0001 C CNN
-	1    4100 7050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 6850 4100 6800
-$Comp
-L pace:10u C8
-U 1 1 5FAF8A35
-P 1050 7100
-F 0 "C8" H 1142 7146 50  0000 L CNN
-F 1 "10u" H 1142 7055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1050 7100 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf" H 1050 7100 50  0001 C CNN
-F 4 "C15525" H 1050 7100 50  0001 C CNN "LCSC"
-	1    1050 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1050 6800 1050 7000
-$Comp
-L pace:GND #PWR?
-U 1 1 5FAF8A3D
-P 1050 7200
-F 0 "#PWR?" H 1050 6950 50  0001 C CNN
-F 1 "GND" H 1055 7027 50  0000 C CNN
-F 2 "" H 1050 7200 50  0001 C CNN
-F 3 "" H 1050 7200 50  0001 C CNN
-	1    1050 7200
-	1    0    0    -1  
-$EndComp
-Text Notes 550  6600 0    50   ~ 0
-1.8 to 4.6 volts
-Text Notes 1700 8100 0    50   ~ 0
-dc-dc converter / regulator
-$Comp
-L pace:TPS63000 U6
-U 1 1 5FAF8A48
-P 2150 7000
-F 0 "U6" H 2150 7667 50  0000 C CNN
-F 1 "TPS63000" H 2150 7576 50  0000 C CNN
-F 2 "Package_SON:Texas_DRC0010J_ThermalVias" H 3000 6450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps63000.pdf" H 1850 7550 50  0001 C CNN
-F 4 "C24966" H 2150 7000 50  0001 C CNN "LCSC"
-	1    2150 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L pace:+5V #PWR?
-U 1 1 5FB51BBA
-P 4100 6650
-F 0 "#PWR?" H 4100 6500 50  0001 C CNN
-F 1 "+5V" H 4115 6823 50  0000 C CNN
-F 2 "" H 4100 6650 50  0001 C CNN
-F 3 "" H 4100 6650 50  0001 C CNN
-	1    4100 6650
-	1    0    0    -1  
-$EndComp
 Text GLabel 9650 3200 2    50   Input ~ 0
 SDA
 Text GLabel 9650 3300 2    50   Input ~ 0
@@ -1572,8 +1271,6 @@ Wire Wire Line
 Wire Wire Line
 	1450 4750 1450 4650
 Connection ~ 1450 4750
-Wire Wire Line
-	1050 6800 1400 6800
 NoConn ~ 4000 1500
 NoConn ~ 5000 1300
 Text GLabel 9650 3400 2    50   Input ~ 0
@@ -1647,24 +1344,6 @@ $EndComp
 Text Notes 4950 4900 0    50   ~ 0
 led's enabled by default\nforced off by driving low
 $Comp
-L pace:AO4407 Q6
-U 1 1 5FFE5195
-P 4900 3100
-F 0 "Q6" V 4800 3400 50  0000 C CNN
-F 1 "AO4407" V 4700 3600 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5100 3200 50  0001 C CNN
-F 3 "https://jlcpcb.com/parts/componentSearch?searchTxt=ao4407" H 4900 3100 50  0001 C CNN
-F 4 "C16072" H 4900 3100 50  0001 C CNN "LCSC"
-	1    4900 3100
-	0    1    -1   0   
-$EndComp
-Text GLabel 4850 3550 0    50   Input ~ 0
-DISABLE_5v
-Text GLabel 5250 3000 2    50   Input ~ 0
-Vraw_for_5v
-Wire Wire Line
-	5100 3000 5200 3000
-$Comp
 L pace:100 R28
 U 1 1 60077714
 P 5850 4600
@@ -1700,56 +1379,17 @@ Connection ~ 1750 2750
 Connection ~ 1150 2750
 Connection ~ 900  2750
 $Comp
-L pace:100 R27
-U 1 1 6010D393
-P 4900 3400
-F 0 "R27" H 4959 3446 50  0000 L CNN
-F 1 "100" H 4959 3355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4900 3400 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 4900 3400 50  0001 C CNN
-F 4 "C25076" H 4900 3400 50  0001 C CNN "LCSC"
-	1    4900 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 3550 4900 3550
-Wire Wire Line
-	4900 3550 4900 3500
-Wire Wire Line
-	4700 3000 4400 3000
-Wire Wire Line
-	4400 3000 4400 2750
-Connection ~ 4400 2750
-$Comp
-L pace:PWR_FLAG #FLG?
-U 1 1 60178EF3
-P 5200 3000
-F 0 "#FLG?" H 5200 3075 50  0001 C CNN
-F 1 "PWR_FLAG" H 5200 3173 50  0001 C CNN
-F 2 "" H 5200 3000 50  0001 C CNN
-F 3 "~" H 5200 3000 50  0001 C CNN
-	1    5200 3000
-	1    0    0    -1  
-$EndComp
-Connection ~ 5200 3000
-Wire Wire Line
-	5200 3000 5250 3000
-Wire Wire Line
-	4000 2750 4400 2750
-$Comp
 L pace:PWR_FLAG #FLG?
 U 1 1 60179862
-P 5200 2750
-F 0 "#FLG?" H 5200 2825 50  0001 C CNN
-F 1 "PWR_FLAG" H 5200 2923 50  0001 C CNN
-F 2 "" H 5200 2750 50  0001 C CNN
-F 3 "~" H 5200 2750 50  0001 C CNN
-	1    5200 2750
+P 4200 2750
+F 0 "#FLG?" H 4200 2825 50  0001 C CNN
+F 1 "PWR_FLAG" H 4200 2923 50  0001 C CNN
+F 2 "" H 4200 2750 50  0001 C CNN
+F 3 "~" H 4200 2750 50  0001 C CNN
+	1    4200 2750
 	1    0    0    -1  
 $EndComp
-Connection ~ 5200 2750
-Wire Wire Line
-	5200 2750 4400 2750
+Connection ~ 4200 2750
 Text GLabel 1100 2550 2    50   Input ~ 0
 Vcharge
 Wire Wire Line
@@ -1811,79 +1451,9 @@ Wire Wire Line
 	6450 4150 6450 4100
 Wire Wire Line
 	6450 4400 6450 4350
-Connection ~ 1400 6900
-Wire Wire Line
-	1400 6800 1400 6900
-Text GLabel 950  6800 0    50   Input ~ 0
-Vraw_for_5v
-Wire Wire Line
-	950  6800 1050 6800
-Connection ~ 1050 6800
-$Comp
-L pace:100k R11
-U 1 1 6047F885
-P 2950 7250
-F 0 "R11" H 3009 7296 50  0000 L CNN
-F 1 "100k" H 3009 7205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2950 7250 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 2950 7250 50  0001 C CNN
-F 4 "C25741" H 2950 7250 50  0001 C CNN "LCSC"
-	1    2950 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 7350 2950 7450
-Wire Wire Line
-	2950 7650 2950 7750
-$Comp
-L pace:10k R26
-U 1 1 604B92C9
-P 2950 7550
-F 0 "R26" H 3009 7596 50  0000 L CNN
-F 1 "10k" H 3009 7505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2950 7550 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 2950 7550 50  0001 C CNN
-F 4 "C25744" H 2950 7550 50  0001 C CNN "LCSC"
-	1    2950 7550
-	1    0    0    -1  
-$EndComp
 Text GLabel 9650 2400 2    50   Input ~ 0
 ENABLE_STATUS
-Text GLabel 9650 2000 2    50   Input ~ 0
-DISABLE_5v
-$Comp
-L pace:Conn_01x03_Male J6
-U 1 1 5FC6ED12
-P 3800 4850
-F 0 "J6" H 3900 5150 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 3908 5040 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3800 4850 50  0001 C CNN
-F 3 "~" H 3800 4850 50  0001 C CNN
-	1    3800 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L pace:GND #PWR?
-U 1 1 5FC82982
-P 4000 5100
-F 0 "#PWR?" H 4000 4850 50  0001 C CNN
-F 1 "GND" H 4005 4927 50  0000 C CNN
-F 2 "" H 4000 5100 50  0001 C CNN
-F 3 "" H 4000 5100 50  0001 C CNN
-	1    4000 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 4950 4000 5100
-Wire Wire Line
-	4000 4850 4150 4850
-Wire Wire Line
-	4000 4750 4000 4650
-Wire Wire Line
-	4000 4650 3650 4650
 Connection ~ 3250 4650
-Text Notes 3650 4400 0    50   ~ 0
-temporary header\nin case power supply\ndoesn't work\n
 Text GLabel 9650 1600 2    50   Input ~ 0
 WIFI
 $Comp
@@ -1924,20 +1494,6 @@ $EndComp
 Connection ~ 1250 2350
 Wire Wire Line
 	1250 2350 900  2350
-$Comp
-L pace:PWR_FLAG #FLG?
-U 1 1 5FD64FF3
-P 4150 4850
-F 0 "#FLG?" H 4150 4925 50  0001 C CNN
-F 1 "PWR_FLAG" H 4150 5023 50  0001 C CNN
-F 2 "" H 4150 4850 50  0001 C CNN
-F 3 "~" H 4150 4850 50  0001 C CNN
-	1    4150 4850
-	1    0    0    -1  
-$EndComp
-Connection ~ 4150 4850
-Text GLabel 9650 2500 2    50   Input ~ 0
-SPI_CS1
 Wire Wire Line
 	8150 6800 8200 6800
 Wire Wire Line
@@ -2246,8 +1802,6 @@ strapping
 Text GLabel 9650 2700 2    50   Input ~ 0
 IO1
 Wire Wire Line
-	4150 4850 4550 4850
-Wire Wire Line
 	3650 5000 3650 4650
 Connection ~ 3650 4650
 Wire Wire Line
@@ -2275,9 +1829,14 @@ Connection ~ 6050 1150
 Connection ~ 1450 4650
 Wire Wire Line
 	1450 4650 1100 4650
-Connection ~ 1400 6800
-Wire Wire Line
-	1400 6800 1750 6800
 Text Notes 7300 5750 0    50   ~ 0
 TX/RX reversed\non purpose
+Wire Wire Line
+	3650 4650 4000 4650
+NoConn ~ 9650 2000
+Wire Wire Line
+	4000 2750 4200 2750
+Wire Wire Line
+	2900 4650 3250 4650
+NoConn ~ 9650 2500
 $EndSCHEMATC

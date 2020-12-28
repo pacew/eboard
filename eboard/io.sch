@@ -61,231 +61,6 @@ $EndComp
 Wire Wire Line
 	1750 1450 1850 1450
 $Comp
-L pace:BSS138K Q?
-U 1 1 5FD3058F
-P 2100 2200
-AR Path="/5FD3058F" Ref="Q?"  Part="1" 
-AR Path="/5FD0D4AA/5FD3058F" Ref="Q4"  Part="1" 
-F 0 "Q4" V 2349 2200 50  0000 C CNN
-F 1 "BSS138K" V 2440 2200 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 2300 50  0001 C CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 2100 2200 50  0001 C CNN
-F 4 "C255592" H 2100 2200 50  0001 C CNN "LCSC"
-	1    2100 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L pace:3.3k R?
-U 1 1 5FD30596
-P 1800 2200
-AR Path="/5FD30596" Ref="R?"  Part="1" 
-AR Path="/5FD0D4AA/5FD30596" Ref="R21"  Part="1" 
-F 0 "R21" H 1859 2246 50  0000 L CNN
-F 1 "3.3k" H 1859 2155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1800 2200 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 1800 2200 50  0001 C CNN
-F 4 "C25890" H 1800 2200 50  0001 C CNN "LCSC"
-	1    1800 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L pace:3.3k R?
-U 1 1 5FD3059D
-P 2400 2200
-AR Path="/5FD3059D" Ref="R?"  Part="1" 
-AR Path="/5FD0D4AA/5FD3059D" Ref="R23"  Part="1" 
-F 0 "R23" H 2459 2246 50  0000 L CNN
-F 1 "3.3k" H 2459 2155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2400 2200 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 2400 2200 50  0001 C CNN
-F 4 "C25890" H 2400 2200 50  0001 C CNN "LCSC"
-	1    2400 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5FD305A3
-P 1800 2000
-AR Path="/5FD305A3" Ref="#PWR?"  Part="1" 
-AR Path="/5FD0D4AA/5FD305A3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1800 1850 50  0001 C CNN
-F 1 "+3.3V" H 1815 2173 50  0000 C CNN
-F 2 "" H 1800 2000 50  0001 C CNN
-F 3 "" H 1800 2000 50  0001 C CNN
-	1    1800 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 2000 1800 2000
-Wire Wire Line
-	1800 2000 1800 2100
-Connection ~ 1800 2000
-Text GLabel 1650 2300 0    50   Input ~ 0
-SDA
-Wire Wire Line
-	1650 2300 1800 2300
-Wire Wire Line
-	1800 2300 1900 2300
-Connection ~ 1800 2300
-$Comp
-L power:+5V #PWR?
-U 1 1 5FD305B0
-P 2400 2000
-AR Path="/5FD305B0" Ref="#PWR?"  Part="1" 
-AR Path="/5FD0D4AA/5FD305B0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2400 1850 50  0001 C CNN
-F 1 "+5V" H 2415 2173 50  0000 C CNN
-F 2 "" H 2400 2000 50  0001 C CNN
-F 3 "" H 2400 2000 50  0001 C CNN
-	1    2400 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 2000 2400 2100
-Wire Wire Line
-	2300 2300 2400 2300
-Text GLabel 2650 2300 2    50   Input ~ 0
-SDA_5v
-Wire Wire Line
-	2400 2300 2650 2300
-Connection ~ 2400 2300
-$Comp
-L pace:BSS138K Q?
-U 1 1 5FD305BC
-P 2100 3000
-AR Path="/5FD305BC" Ref="Q?"  Part="1" 
-AR Path="/5FD0D4AA/5FD305BC" Ref="Q5"  Part="1" 
-F 0 "Q5" V 2349 3000 50  0000 C CNN
-F 1 "BSS138K" V 2440 3000 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 3100 50  0001 C CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 2100 3000 50  0001 C CNN
-F 4 "C255592" H 2100 3000 50  0001 C CNN "LCSC"
-	1    2100 3000
-	0    1    1    0   
-$EndComp
-$Comp
-L pace:3.3k R?
-U 1 1 5FD305C3
-P 1800 3000
-AR Path="/5FD305C3" Ref="R?"  Part="1" 
-AR Path="/5FD0D4AA/5FD305C3" Ref="R22"  Part="1" 
-F 0 "R22" H 1859 3046 50  0000 L CNN
-F 1 "3.3k" H 1859 2955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 1800 3000 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 1800 3000 50  0001 C CNN
-F 4 "C25890" H 1800 3000 50  0001 C CNN "LCSC"
-	1    1800 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L pace:3.3k R?
-U 1 1 5FD305CA
-P 2400 3000
-AR Path="/5FD305CA" Ref="R?"  Part="1" 
-AR Path="/5FD0D4AA/5FD305CA" Ref="R24"  Part="1" 
-F 0 "R24" H 2459 3046 50  0000 L CNN
-F 1 "3.3k" H 2459 2955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2400 3000 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 2400 3000 50  0001 C CNN
-F 4 "C25890" H 2400 3000 50  0001 C CNN "LCSC"
-	1    2400 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5FD305D0
-P 1800 2800
-AR Path="/5FD305D0" Ref="#PWR?"  Part="1" 
-AR Path="/5FD0D4AA/5FD305D0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1800 2650 50  0001 C CNN
-F 1 "+3.3V" H 1815 2973 50  0000 C CNN
-F 2 "" H 1800 2800 50  0001 C CNN
-F 3 "" H 1800 2800 50  0001 C CNN
-	1    1800 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 2800 1800 2800
-Wire Wire Line
-	1800 2800 1800 2900
-Connection ~ 1800 2800
-Text GLabel 1650 3100 0    50   Input ~ 0
-SCL
-Wire Wire Line
-	1650 3100 1800 3100
-Wire Wire Line
-	1800 3100 1900 3100
-Connection ~ 1800 3100
-$Comp
-L power:+5V #PWR?
-U 1 1 5FD305DD
-P 2400 2800
-AR Path="/5FD305DD" Ref="#PWR?"  Part="1" 
-AR Path="/5FD0D4AA/5FD305DD" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2400 2650 50  0001 C CNN
-F 1 "+5V" H 2415 2973 50  0000 C CNN
-F 2 "" H 2400 2800 50  0001 C CNN
-F 3 "" H 2400 2800 50  0001 C CNN
-	1    2400 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 2800 2400 2900
-Wire Wire Line
-	2300 3100 2400 3100
-Text GLabel 2650 3100 2    50   Input ~ 0
-SCL_5v
-Wire Wire Line
-	2400 3100 2650 3100
-Connection ~ 2400 3100
-$Comp
-L Connector:Conn_01x04_Male J?
-U 1 1 5FD305E8
-P 2100 1250
-AR Path="/5FD305E8" Ref="J?"  Part="1" 
-AR Path="/5FD0D4AA/5FD305E8" Ref="J8"  Part="1" 
-F 0 "J8" H 2208 1439 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 2208 1440 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2100 1250 50  0001 C CNN
-F 3 "~" H 2100 1250 50  0001 C CNN
-	1    2100 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 1150 2400 1150
-Text GLabel 2300 1250 2    50   Input ~ 0
-SDA_5v
-Text GLabel 2300 1350 2    50   Input ~ 0
-SCL_5v
-$Comp
-L power:GND #PWR?
-U 1 1 5FD305F1
-P 2400 1450
-AR Path="/5FD305F1" Ref="#PWR?"  Part="1" 
-AR Path="/5FD0D4AA/5FD305F1" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2400 1200 50  0001 C CNN
-F 1 "GND" H 2405 1277 50  0000 C CNN
-F 2 "" H 2400 1450 50  0001 C CNN
-F 3 "" H 2400 1450 50  0001 C CNN
-	1    2400 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 1450 2400 1450
-$Comp
-L power:+5V #PWR?
-U 1 1 5FD305F8
-P 2400 1150
-AR Path="/5FD305F8" Ref="#PWR?"  Part="1" 
-AR Path="/5FD0D4AA/5FD305F8" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2400 1000 50  0001 C CNN
-F 1 "+5V" H 2415 1323 50  0000 C CNN
-F 2 "" H 2400 1150 50  0001 C CNN
-F 3 "" H 2400 1150 50  0001 C CNN
-	1    2400 1150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x06_Male J9
 U 1 1 5FE919AE
 P 4050 1200
@@ -338,107 +113,6 @@ Wire Wire Line
 	4250 1500 4350 1500
 Wire Wire Line
 	4350 1500 4350 1550
-$Comp
-L Connector:Conn_01x06_Male J10
-U 1 1 5FE96EF0
-P 4800 1200
-F 0 "J10" H 4908 1489 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 4908 1490 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 4800 1200 50  0001 C CNN
-F 3 "~" H 4800 1200 50  0001 C CNN
-	1    4800 1200
-	1    0    0    -1  
-$EndComp
-Text GLabel 5000 1100 2    50   Input ~ 0
-MISO_5v
-$Comp
-L power:GND #PWR?
-U 1 1 5FE96EFA
-P 5100 1550
-AR Path="/5FE96EFA" Ref="#PWR?"  Part="1" 
-AR Path="/5FD0D4AA/5FE96EFA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5100 1300 50  0001 C CNN
-F 1 "GND" H 5105 1377 50  0000 C CNN
-F 2 "" H 5100 1550 50  0001 C CNN
-F 3 "" H 5100 1550 50  0001 C CNN
-	1    5100 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 1000 5100 1000
-Wire Wire Line
-	5100 1000 5100 950 
-Wire Wire Line
-	5000 1500 5100 1500
-Wire Wire Line
-	5100 1500 5100 1550
-$Comp
-L power:+5V #PWR?
-U 1 1 5FE9772A
-P 5100 950
-AR Path="/5FE9772A" Ref="#PWR?"  Part="1" 
-AR Path="/5FD0D4AA/5FE9772A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5100 800 50  0001 C CNN
-F 1 "+5V" H 5115 1123 50  0000 C CNN
-F 2 "" H 5100 950 50  0001 C CNN
-F 3 "" H 5100 950 50  0001 C CNN
-	1    5100 950 
-	1    0    0    -1  
-$EndComp
-Text GLabel 4250 2250 0    50   Input ~ 0
-MISO
-Text GLabel 5000 2250 2    50   Input ~ 0
-MISO_5v
-Text GLabel 5000 1200 2    50   Input ~ 0
-MOSI
-Text GLabel 5000 1300 2    50   Input ~ 0
-SCLK
-Text GLabel 5000 1400 2    50   Input ~ 0
-SPI_CS1
-$Comp
-L pace:SS210 D5
-U 1 1 5FEC7B2D
-P 4750 2250
-F 0 "D5" H 4750 2043 50  0000 C CNN
-F 1 "SS210" H 4750 2134 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA" V 4750 2250 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1903041730_MDD-Jiangsu-Yutai-Elec-SS210_C14996.pdf" V 4750 2250 50  0001 C CNN
-F 4 "C14996" H 4750 2250 50  0001 C CNN "LCSC"
-	1    4750 2250
-	-1   0    0    1   
-$EndComp
-$Comp
-L pace:3.3k R25
-U 1 1 5FECC480
-P 4400 2150
-F 0 "R25" H 4459 2196 50  0000 L CNN
-F 1 "3.3k" H 4459 2105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4400 2150 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 4400 2150 50  0001 C CNN
-F 4 "C25890" H 4400 2150 50  0001 C CNN "LCSC"
-	1    4400 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 2250 4400 2250
-Wire Wire Line
-	4400 2250 4650 2250
-Connection ~ 4400 2250
-Wire Wire Line
-	4850 2250 5000 2250
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5FED0D40
-P 4400 2050
-AR Path="/5FED0D40" Ref="#PWR?"  Part="1" 
-AR Path="/5FD0D4AA/5FED0D40" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4400 1900 50  0001 C CNN
-F 1 "+3.3V" H 4415 2223 50  0000 C CNN
-F 2 "" H 4400 2050 50  0001 C CNN
-F 3 "" H 4400 2050 50  0001 C CNN
-	1    4400 2050
-	1    0    0    -1  
-$EndComp
 $Comp
 L pace:AO4407 Q11
 U 1 1 5FEF36A8
@@ -511,8 +185,6 @@ F 4 "C85364" H 3850 4400 50  0001 C CNN "LCSC"
 $EndComp
 Text GLabel 3350 4300 0    50   Input ~ 0
 SCLK
-Text GLabel 3350 4500 0    50   Input ~ 0
-SPI_CS1
 Text GLabel 4350 4300 2    50   Input ~ 0
 SPI_CS0
 $Comp
@@ -1454,17 +1126,6 @@ F 3 "" H 1650 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Male J21
-U 1 1 5FE73D5C
-P 7200 1050
-F 0 "J21" H 7308 1239 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 7172 1073 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7200 1050 50  0001 C CNN
-F 3 "~" H 7200 1050 50  0001 C CNN
-	1    7200 1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02_Male J20
 U 1 1 5FE76BFD
 P 6150 1000
@@ -1494,44 +1155,27 @@ Wire Wire Line
 	6350 1100 6450 1100
 Wire Wire Line
 	6450 1100 6450 1150
-Text GLabel 7400 1050 2    50   Input ~ 0
+Text GLabel 7350 1100 2    50   Input ~ 0
 Vstrong
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5FE8D584
-P 7550 850
+P 7500 900
 AR Path="/5FE8D584" Ref="#PWR?"  Part="1" 
 AR Path="/5FD0D4AA/5FE8D584" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7550 700 50  0001 C CNN
-F 1 "+3.3V" H 7565 1023 50  0000 C CNN
-F 2 "" H 7550 850 50  0001 C CNN
-F 3 "" H 7550 850 50  0001 C CNN
-	1    7550 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5FE8DAEF
-P 7950 1050
-AR Path="/5FE8DAEF" Ref="#PWR?"  Part="1" 
-AR Path="/5FD0D4AA/5FE8DAEF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7950 900 50  0001 C CNN
-F 1 "+5V" H 7965 1223 50  0000 C CNN
-F 2 "" H 7950 1050 50  0001 C CNN
-F 3 "" H 7950 1050 50  0001 C CNN
-	1    7950 1050
+F 0 "#PWR?" H 7500 750 50  0001 C CNN
+F 1 "+3.3V" H 7515 1073 50  0000 C CNN
+F 2 "" H 7500 900 50  0001 C CNN
+F 3 "" H 7500 900 50  0001 C CNN
+	1    7500 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 1150 7950 1150
+	7350 1000 7500 1000
 Wire Wire Line
-	7950 1150 7950 1050
-Wire Wire Line
-	7400 950  7550 950 
-Wire Wire Line
-	7550 950  7550 850 
-Text Notes 7000 1400 0    50   ~ 0
-open for external Vstrong\nelse jumper middle to 3.3 or 5
+	7500 1000 7500 900 
+Text Notes 7000 1550 0    50   ~ 0
+open for external Vstrong\nelse jumper\n
 Text GLabel 1150 6650 0    50   Input ~ 0
 Vstrong
 Text GLabel 1150 7250 0    50   Input ~ 0
@@ -1546,4 +1190,16 @@ Wire Wire Line
 	3150 6300 3400 6300
 Wire Wire Line
 	3400 6300 3400 6600
+$Comp
+L pace:Conn_01x02_Male J21
+U 1 1 5FF79F10
+P 7150 1000
+F 0 "J21" H 7258 1089 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 7258 1090 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7150 1000 50  0001 C CNN
+F 3 "~" H 7150 1000 50  0001 C CNN
+	1    7150 1000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3350 4500
 $EndSCHEMATC
