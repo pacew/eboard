@@ -6,6 +6,9 @@ BOM=$(PROJ)_bom_jlc.csv
 
 all: $(ZIP) $(BOM)
 
+check:
+	grep '^L ' $(PROJ).sch | awk '{print $$2}' | grep -v '^pace:' | sort -u
+
 GERBS = $(PROJ)-B_Cu.gbr \
 	$(PROJ)-B_Mask.gbr \
 	$(PROJ)-B_Paste.gbr \

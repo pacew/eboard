@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+3.3V #PWR?
+L pace:+3.3V #PWR?
 U 1 1 5F9E3A4A
 P 8650 1400
 F 0 "#PWR?" H 8650 1250 50  0001 C CNN
@@ -26,7 +26,7 @@ F 3 "" H 8650 1400 50  0001 C CNN
 $EndComp
 NoConn ~ 8050 3000
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5F9F3FB8
 P 8850 4600
 F 0 "#PWR?" H 8850 4350 50  0001 C CNN
@@ -37,7 +37,7 @@ F 3 "" H 8850 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J2
+L pace:USB_B_Micro J2
 U 1 1 5FA14D8B
 P 2800 1300
 F 0 "J2" H 2857 1767 50  0000 C CNN
@@ -60,7 +60,7 @@ F 4 "C85364" H 4500 1400 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5F9FDC4B
 P 2800 1700
 F 0 "#PWR?" H 2800 1450 50  0001 C CNN
@@ -71,7 +71,7 @@ F 3 "" H 2800 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5F9FE0F5
 P 4500 1900
 F 0 "#PWR?" H 4500 1650 50  0001 C CNN
@@ -96,7 +96,7 @@ Vin
 Wire Wire Line
 	3100 1100 3200 1100
 $Comp
-L Connector:Conn_01x02_Male J1
+L pace:Conn_01x02_Male J1
 U 1 1 5FA09D6F
 P 650 900
 F 0 "J1" H 500 850 50  0000 C CNN
@@ -107,7 +107,7 @@ F 3 "~" H 650 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FA0ADA6
 P 950 1100
 F 0 "#PWR?" H 950 850 50  0001 C CNN
@@ -174,7 +174,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 900  2100 900 
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FB5ED49
 P 1700 1200
 F 0 "#PWR?" H 1700 950 50  0001 C CNN
@@ -197,7 +197,7 @@ F 4 "C25744" H 6450 4000 50  0001 C CNN "LCSC"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FAB0201
 P 1800 3300
 F 0 "#PWR?" H 1800 3050 50  0001 C CNN
@@ -226,7 +226,7 @@ Wire Wire Line
 Wire Wire Line
 	2750 3050 2750 3200
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FABF7F3
 P 2950 3400
 F 0 "#PWR?" H 2950 3150 50  0001 C CNN
@@ -255,7 +255,7 @@ $EndComp
 Wire Wire Line
 	1150 3100 1150 2750
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FB25EC1
 P 1150 3300
 F 0 "#PWR?" H 1150 3050 50  0001 C CNN
@@ -282,7 +282,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 2750 3150 2950
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FB2FBB8
 P 3150 3150
 F 0 "#PWR?" H 3150 2900 50  0001 C CNN
@@ -293,7 +293,7 @@ F 3 "" H 3150 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male J5
+L pace:Conn_01x02_Male J5
 U 1 1 5FB3B0D2
 P 3800 2950
 F 0 "J5" H 3908 3039 50  0000 C CNN
@@ -314,7 +314,7 @@ Wire Wire Line
 	4000 2750 4000 2950
 Connection ~ 3650 2750
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FB43F25
 P 3650 3050
 F 0 "#PWR?" H 3650 2800 50  0001 C CNN
@@ -325,7 +325,7 @@ F 3 "" H 3650 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FB451F5
 P 4000 3050
 F 0 "#PWR?" H 4000 2800 50  0001 C CNN
@@ -341,7 +341,7 @@ Wire Wire Line
 	5250 2750 5200 2750
 Connection ~ 4000 2750
 $Comp
-L Connector:Conn_01x03_Male J3
+L pace:Conn_01x03_Male J3
 U 1 1 5FB6AE11
 P 2200 2550
 F 0 "J3" V 2308 2362 50  0000 R CNN
@@ -425,7 +425,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 4900 2900 4950
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FAA312D
 P 2900 5200
 F 0 "#PWR?" H 2900 4950 50  0001 C CNN
@@ -480,7 +480,7 @@ F 4 "C15525" H 3650 5100 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FAB6079
 P 3650 5200
 F 0 "#PWR?" H 3650 4950 50  0001 C CNN
@@ -491,7 +491,7 @@ F 3 "" H 3650 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L pace:+3.3V #PWR?
 U 1 1 5FAB8FC4
 P 4550 4700
 F 0 "#PWR?" H 4550 4550 50  0001 C CNN
@@ -504,7 +504,7 @@ $EndComp
 Wire Wire Line
 	4550 4850 4550 4700
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FABD492
 P 2200 5550
 F 0 "#PWR?" H 2200 5300 50  0001 C CNN
@@ -566,7 +566,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 5050 1450 5100
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FADEC49
 P 1450 5300
 F 0 "#PWR?" H 1450 5050 50  0001 C CNN
@@ -590,7 +590,7 @@ F 4 "C15525" H 4550 5000 50  0001 C CNN "LCSC"
 $EndComp
 Connection ~ 4550 4850
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FAE3554
 P 4550 5100
 F 0 "#PWR?" H 4550 4850 50  0001 C CNN
@@ -619,7 +619,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 4650 1100 4850
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FAF09F6
 P 1100 5050
 F 0 "#PWR?" H 1100 4800 50  0001 C CNN
@@ -843,7 +843,7 @@ F 4 "C1525" H 8100 750 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L pace:+3.3V #PWR?
 U 1 1 5F9E2934
 P 7650 650
 F 0 "#PWR?" H 7650 500 50  0001 C CNN
@@ -854,7 +854,7 @@ F 3 "" H 7650 650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5F9E259F
 P 7650 850
 F 0 "#PWR?" H 7650 600 50  0001 C CNN
@@ -877,7 +877,7 @@ F 4 "C193707" H 8850 1129 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FABCA2F
 P 2750 3400
 F 0 "#PWR?" H 2750 3150 50  0001 C CNN
@@ -888,7 +888,7 @@ F 3 "" H 2750 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FAC67E2
 P 2600 3400
 F 0 "#PWR?" H 2600 3150 50  0001 C CNN
@@ -926,7 +926,7 @@ USB_DP
 Text GLabel 5550 7000 0    50   Input ~ 0
 USB_DM
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FB5CE09
 P 5850 7450
 F 0 "#PWR?" H 5850 7200 50  0001 C CNN
@@ -957,7 +957,7 @@ F 4 "C1525" H 9000 7500 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FB6D082
 P 8700 7700
 F 0 "#PWR?" H 8700 7450 50  0001 C CNN
@@ -996,7 +996,7 @@ F 4 "C25744" H 8200 7450 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FBA2D5D
 P 8200 7650
 F 0 "#PWR?" H 8200 7400 50  0001 C CNN
@@ -1009,7 +1009,7 @@ $EndComp
 Text GLabel 9650 2300 2    50   Input ~ 0
 STATUS_LED
 $Comp
-L power:+3.3V #PWR?
+L pace:+3.3V #PWR?
 U 1 1 5FBC769D
 P 9750 7100
 F 0 "#PWR?" H 9750 6950 50  0001 C CNN
@@ -1063,7 +1063,7 @@ Connection ~ 9000 7300
 Wire Wire Line
 	9000 7300 8700 7300
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FC17812
 P 9750 7750
 F 0 "#PWR?" H 9750 7500 50  0001 C CNN
@@ -1115,7 +1115,7 @@ Connection ~ 5850 6800
 NoConn ~ 5950 6600
 NoConn ~ 5950 6700
 $Comp
-L power:+3.3V #PWR?
+L pace:+3.3V #PWR?
 U 1 1 5FC99540
 P 4900 7050
 F 0 "#PWR?" H 4900 6900 50  0001 C CNN
@@ -1128,7 +1128,7 @@ $EndComp
 NoConn ~ 6700 7700
 NoConn ~ 6800 7700
 $Comp
-L power:+3.3V #PWR?
+L pace:+3.3V #PWR?
 U 1 1 5FD114AE
 P 7600 7250
 F 0 "#PWR?" H 7600 7100 50  0001 C CNN
@@ -1249,7 +1249,7 @@ input only
 Text Notes 9950 4100 0    50   ~ 0
 input only
 $Comp
-L power:+3.3V #PWR?
+L pace:+3.3V #PWR?
 U 1 1 5FBDADD5
 P 9000 7100
 F 0 "#PWR?" H 9000 6950 50  0001 C CNN
@@ -1304,7 +1304,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 7050 2950 7100
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FAF89CB
 P 2950 7750
 F 0 "#PWR?" H 2950 7500 50  0001 C CNN
@@ -1364,7 +1364,7 @@ Wire Wire Line
 	3800 6800 3800 6850
 Connection ~ 3350 6800
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FAF89ED
 P 3800 7050
 F 0 "#PWR?" H 3800 6800 50  0001 C CNN
@@ -1380,7 +1380,7 @@ Wire Wire Line
 	4100 6800 4100 6650
 Connection ~ 3800 6800
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FAF89FC
 P 2150 7700
 F 0 "#PWR?" H 2150 7450 50  0001 C CNN
@@ -1442,7 +1442,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 7200 1400 7250
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FAF8A1F
 P 1400 7450
 F 0 "#PWR?" H 1400 7200 50  0001 C CNN
@@ -1466,7 +1466,7 @@ F 4 "C15525" H 4100 6950 50  0001 C CNN "LCSC"
 $EndComp
 Connection ~ 4100 6800
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FAF8A2D
 P 4100 7050
 F 0 "#PWR?" H 4100 6800 50  0001 C CNN
@@ -1493,7 +1493,7 @@ $EndComp
 Wire Wire Line
 	1050 6800 1050 7000
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FAF8A3D
 P 1050 7200
 F 0 "#PWR?" H 1050 6950 50  0001 C CNN
@@ -1520,7 +1520,7 @@ F 4 "C24966" H 2150 7000 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L pace:+5V #PWR?
 U 1 1 5FB51BBA
 P 4100 6650
 F 0 "#PWR?" H 4100 6500 50  0001 C CNN
@@ -1556,7 +1556,7 @@ NoConn ~ 9650 4300
 Wire Wire Line
 	5100 700  5250 700 
 $Comp
-L power:PWR_FLAG #FLG?
+L pace:PWR_FLAG #FLG?
 U 1 1 5FE5765D
 P 2100 900
 F 0 "#FLG?" H 2100 975 50  0001 C CNN
@@ -1570,7 +1570,7 @@ Connection ~ 2100 900
 Wire Wire Line
 	2100 900  1900 900 
 $Comp
-L power:PWR_FLAG #FLG?
+L pace:PWR_FLAG #FLG?
 U 1 1 5FE5E012
 P 1450 4550
 F 0 "#FLG?" H 1450 4625 50  0001 C CNN
@@ -1596,11 +1596,11 @@ SCLK
 Text GLabel 9650 2900 2    50   Input ~ 0
 SPI_CS0
 $Comp
-L pace:AO4407A_new Q1
+L pace:AO4407 Q1
 U 1 1 5FEE6ADC
 P 1700 1000
 F 0 "Q1" V 2137 1009 50  0000 C CNN
-F 1 "AO4407A_new" V 2046 1009 50  0000 C CNN
+F 1 "AO4407" V 2046 1009 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1900 1100 50  0001 C CNN
 F 3 "https://jlcpcb.com/parts/componentSearch?searchTxt=ao4407" H 1700 1000 50  0001 C CNN
 F 4 "C16072" H 1700 1000 50  0001 C CNN "LCSC"
@@ -1627,7 +1627,7 @@ Connection ~ 7250 4100
 Wire Wire Line
 	7250 4100 7350 4100
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FC1A853
 P 900 3300
 F 0 "#PWR?" H 900 3050 50  0001 C CNN
@@ -1658,11 +1658,11 @@ $EndComp
 Text Notes 4950 4900 0    50   ~ 0
 led's enabled by default\nforced off by driving low
 $Comp
-L pace:AO4407A_new Q6
+L pace:AO4407 Q6
 U 1 1 5FFE5195
 P 4900 3100
 F 0 "Q6" V 4800 3400 50  0000 C CNN
-F 1 "AO4407A_new" V 4700 3600 50  0000 C CNN
+F 1 "AO4407" V 4700 3600 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5100 3200 50  0001 C CNN
 F 3 "https://jlcpcb.com/parts/componentSearch?searchTxt=ao4407" H 4900 3100 50  0001 C CNN
 F 4 "C16072" H 4900 3100 50  0001 C CNN "LCSC"
@@ -1732,7 +1732,7 @@ Wire Wire Line
 	4400 3000 4400 2750
 Connection ~ 4400 2750
 $Comp
-L power:PWR_FLAG #FLG?
+L pace:PWR_FLAG #FLG?
 U 1 1 60178EF3
 P 5200 3000
 F 0 "#FLG?" H 5200 3075 50  0001 C CNN
@@ -1748,7 +1748,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 2750 4400 2750
 $Comp
-L power:PWR_FLAG #FLG?
+L pace:PWR_FLAG #FLG?
 U 1 1 60179862
 P 5200 2750
 F 0 "#FLG?" H 5200 2825 50  0001 C CNN
@@ -1826,7 +1826,7 @@ Connection ~ 1400 6900
 Wire Wire Line
 	1400 6750 1400 6900
 $Comp
-L power:PWR_FLAG #FLG?
+L pace:PWR_FLAG #FLG?
 U 1 1 5FE6C363
 P 1400 6750
 F 0 "#FLG?" H 1400 6825 50  0001 C CNN
@@ -1874,7 +1874,7 @@ ENABLE_STATUS
 Text GLabel 9650 2000 2    50   Input ~ 0
 DISABLE_5v
 $Comp
-L Connector:Conn_01x03_Male J6
+L pace:Conn_01x03_Male J6
 U 1 1 5FC6ED12
 P 3800 4850
 F 0 "J6" H 3900 5150 50  0000 C CNN
@@ -1885,7 +1885,7 @@ F 3 "~" H 3800 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FC82982
 P 4000 5100
 F 0 "#PWR?" H 4000 4850 50  0001 C CNN
@@ -1933,7 +1933,7 @@ F 4 "C255592" H 7150 4600 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG?
+L pace:PWR_FLAG #FLG?
 U 1 1 5FD5F0B1
 P 1250 2350
 F 0 "#FLG?" H 1250 2425 50  0001 C CNN
@@ -1947,7 +1947,7 @@ Connection ~ 1250 2350
 Wire Wire Line
 	1250 2350 900  2350
 $Comp
-L power:PWR_FLAG #FLG?
+L pace:PWR_FLAG #FLG?
 U 1 1 5FD64FF3
 P 4150 4850
 F 0 "#FLG?" H 4150 4925 50  0001 C CNN
@@ -2045,7 +2045,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 7200 5600 7200
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FE4F1D9
 P 4900 7300
 F 0 "#PWR?" H 4900 7050 50  0001 C CNN
@@ -2056,7 +2056,7 @@ F 3 "" H 4900 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FE4F5F4
 P 5300 7300
 F 0 "#PWR?" H 5300 7050 50  0001 C CNN
@@ -2067,7 +2067,7 @@ F 3 "" H 5300 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H1
+L pace:MountingHole_Pad H1
 U 1 1 5FE8137C
 P 6050 1050
 F 0 "H1" H 6150 1050 50  0000 L CNN
@@ -2078,10 +2078,21 @@ F 3 "~" H 6050 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
+L pace:MountingHole_Pad H3
 U 1 1 5FE81ECE
+P 6650 1050
+F 0 "H3" H 6750 1050 50  0000 L CNN
+F 1 "MountingHole" H 6750 1005 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6650 1050 50  0001 C CNN
+F 3 "~" H 6650 1050 50  0001 C CNN
+	1    6650 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L pace:MountingHole_Pad H2
+U 1 1 5FE824CC
 P 6350 1050
-F 0 "H3" H 6450 1050 50  0000 L CNN
+F 0 "H2" H 6450 1050 50  0000 L CNN
 F 1 "MountingHole" H 6450 1005 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 6350 1050 50  0001 C CNN
 F 3 "~" H 6350 1050 50  0001 C CNN
@@ -2089,25 +2100,14 @@ F 3 "~" H 6350 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
-U 1 1 5FE824CC
-P 6050 1250
-F 0 "H2" H 6150 1250 50  0000 L CNN
-F 1 "MountingHole" H 6150 1205 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6050 1250 50  0001 C CNN
-F 3 "~" H 6050 1250 50  0001 C CNN
-	1    6050 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
+L pace:MountingHole_Pad H4
 U 1 1 5FE82AB0
-P 6350 1250
-F 0 "H4" H 6450 1250 50  0000 L CNN
-F 1 "MountingHole" H 6450 1205 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6350 1250 50  0001 C CNN
-F 3 "~" H 6350 1250 50  0001 C CNN
-	1    6350 1250
+P 6950 1050
+F 0 "H4" H 7050 1050 50  0000 L CNN
+F 1 "MountingHole" H 7050 1005 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6950 1050 50  0001 C CNN
+F 3 "~" H 6950 1050 50  0001 C CNN
+	1    6950 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2214,7 +2214,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 1950 6200 2000
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FF7E1BE
 P 6200 2250
 F 0 "#PWR?" H 6200 2000 50  0001 C CNN
@@ -2231,7 +2231,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 2850 6200 2900
 $Comp
-L power:GND #PWR?
+L pace:GND #PWR?
 U 1 1 5FF9C137
 P 6200 3150
 F 0 "#PWR?" H 6200 2900 50  0001 C CNN
@@ -2274,4 +2274,24 @@ Wire Wire Line
 Connection ~ 3650 4650
 Wire Wire Line
 	3650 4650 3250 4650
+Wire Wire Line
+	6050 1150 6350 1150
+Connection ~ 6350 1150
+Wire Wire Line
+	6350 1150 6650 1150
+Connection ~ 6650 1150
+Wire Wire Line
+	6650 1150 6950 1150
+$Comp
+L pace:GND #PWR?
+U 1 1 5FEBEDB1
+P 6050 1150
+F 0 "#PWR?" H 6050 900 50  0001 C CNN
+F 1 "GND" H 6055 977 50  0000 C CNN
+F 2 "" H 6050 1150 50  0001 C CNN
+F 3 "" H 6050 1150 50  0001 C CNN
+	1    6050 1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 1150
 $EndSCHEMATC
