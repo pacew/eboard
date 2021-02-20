@@ -121,7 +121,7 @@ F 0 "Q11" H 9900 1200 50  0000 L CNN
 F 1 "AO4407" H 9900 1300 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9750 1350 50  0001 C CNN
 F 3 "https://jlcpcb.com/parts/componentSearch?searchTxt=ao4407" H 9550 1250 50  0001 C CNN
-F 4 "C16072" H 9550 1250 50  0001 C CNN "LCSC"
+F 4 "C469397" H 9550 1250 50  0001 C CNN "LCSC"
 	1    9550 1250
 	1    0    0    1   
 $EndComp
@@ -359,7 +359,7 @@ F 0 "Q20" H 9850 2900 50  0000 L CNN
 F 1 "AO4407" H 9850 3000 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9700 3050 50  0001 C CNN
 F 3 "https://jlcpcb.com/parts/componentSearch?searchTxt=ao4407" H 9500 2950 50  0001 C CNN
-F 4 "C16072" H 9500 2950 50  0001 C CNN "LCSC"
+F 4 "C469397" H 9500 2950 50  0001 C CNN "LCSC"
 	1    9500 2950
 	1    0    0    1   
 $EndComp
@@ -509,7 +509,7 @@ F 0 "Q19" H 9700 4700 50  0000 L CNN
 F 1 "AO4407" H 9700 4800 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9550 4850 50  0001 C CNN
 F 3 "https://jlcpcb.com/parts/componentSearch?searchTxt=ao4407" H 9350 4750 50  0001 C CNN
-F 4 "C16072" H 9350 4750 50  0001 C CNN "LCSC"
+F 4 "C469397" H 9350 4750 50  0001 C CNN "LCSC"
 	1    9350 4750
 	1    0    0    1   
 $EndComp
@@ -659,7 +659,7 @@ F 0 "Q18" H 9650 6400 50  0000 L CNN
 F 1 "AO4407" H 9650 6500 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9500 6550 50  0001 C CNN
 F 3 "https://jlcpcb.com/parts/componentSearch?searchTxt=ao4407" H 9300 6450 50  0001 C CNN
-F 4 "C16072" H 9300 6450 50  0001 C CNN "LCSC"
+F 4 "C469397" H 9300 6450 50  0001 C CNN "LCSC"
 	1    9300 6450
 	1    0    0    1   
 $EndComp

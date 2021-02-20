@@ -1284,7 +1284,7 @@ F 0 "Q1" V 2137 1009 50  0000 C CNN
 F 1 "AO4407" V 2046 1009 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1900 1100 50  0001 C CNN
 F 3 "https://jlcpcb.com/parts/componentSearch?searchTxt=ao4407" H 1700 1000 50  0001 C CNN
-F 4 "C16072" H 1700 1000 50  0001 C CNN "LCSC"
+F 4 "C469397" H 1700 1000 50  0001 C CNN "LCSC"
 	1    1700 1000
 	0    -1   -1   0   
 $EndComp
