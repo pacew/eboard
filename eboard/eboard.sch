@@ -335,11 +335,6 @@ F 3 "" H 4000 3050 50  0001 C CNN
 	1    4000 3050
 	1    0    0    -1  
 $EndComp
-Text GLabel 4300 2750 2    50   Input ~ 0
-Vraw
-Wire Wire Line
-	4300 2750 4200 2750
-Connection ~ 4000 2750
 $Comp
 L pace:Conn_01x03_Male J3
 U 1 1 5FB6AE11
@@ -944,7 +939,7 @@ L pace:ledgreen D4
 U 1 1 5FB8D839
 P 8200 7150
 F 0 "D4" V 8300 7050 50  0000 R CNN
-F 1 "ledgreen" V 7850 7250 50  0001 R CNN
+F 1 "ledgreen" V 8200 7050 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" V 8200 7150 50  0001 C CNN
 F 3 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Green-0805-Iv-207-249-mcd-atIF-20mA_C2297.html/?href=jlc-SMT" V 8200 7150 50  0001 C CNN
 F 4 "C2297" H 8200 7150 50  0001 C CNN "LCSC"
@@ -1303,8 +1298,6 @@ Text GLabel 9650 3900 2    50   Input ~ 0
 OUT3
 Text Notes 3300 550  0    50   ~ 0
 Diode drops 5v usb input\nto safe range for dc-dc converter,\nand prevents backdriving USB
-Text GLabel 5600 4600 0    50   Input ~ 0
-ENABLE_STATUS
 Wire Wire Line
 	1900 2150 2200 2150
 Wire Wire Line
@@ -1327,36 +1320,6 @@ Wire Wire Line
 	900  2750 900  3100
 Wire Wire Line
 	7250 4100 7250 4150
-Wire Wire Line
-	7250 4350 7250 4400
-$Comp
-L pace:100k R29
-U 1 1 5FF35D92
-P 6100 4000
-F 0 "R29" H 5900 4050 50  0000 L CNN
-F 1 "100k" H 5850 3950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6100 4000 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 6100 4000 50  0001 C CNN
-F 4 "C25741" H 6100 4000 50  0001 C CNN "LCSC"
-	1    6100 4000
-	1    0    0    -1  
-$EndComp
-Text Notes 4950 4900 0    50   ~ 0
-led's enabled by default\nforced off by driving low
-$Comp
-L pace:100 R28
-U 1 1 60077714
-P 5850 4600
-F 0 "R28" V 5654 4600 50  0000 C CNN
-F 1 "100" V 5745 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 5850 4600 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" H 5850 4600 50  0001 C CNN
-F 4 "C25076" H 5850 4600 50  0001 C CNN "LCSC"
-	1    5850 4600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5600 4600 5750 4600
 Text GLabel 1800 2950 0    50   Input ~ 0
 nCHRG
 Text GLabel 1800 3050 0    50   Input ~ 0
@@ -1378,18 +1341,6 @@ Wire Wire Line
 Connection ~ 1750 2750
 Connection ~ 1150 2750
 Connection ~ 900  2750
-$Comp
-L pace:PWR_FLAG #FLG?
-U 1 1 60179862
-P 4200 2750
-F 0 "#FLG?" H 4200 2825 50  0001 C CNN
-F 1 "PWR_FLAG" H 4200 2923 50  0001 C CNN
-F 2 "" H 4200 2750 50  0001 C CNN
-F 3 "~" H 4200 2750 50  0001 C CNN
-	1    4200 2750
-	1    0    0    -1  
-$EndComp
-Connection ~ 4200 2750
 Text GLabel 1100 2550 2    50   Input ~ 0
 Vcharge
 Wire Wire Line
@@ -1404,41 +1355,17 @@ Wire Wire Line
 Text GLabel 6000 3650 0    50   Input ~ 0
 Vcharge
 Wire Wire Line
-	6000 3650 6100 3650
-Wire Wire Line
 	6450 3650 6450 3900
-Wire Wire Line
-	5950 4600 6100 4600
-Text GLabel 6300 5000 0    50   Input ~ 0
+Text GLabel 6300 4600 0    50   Input ~ 0
 nCHRG
 Wire Wire Line
-	6450 5000 6450 4800
-Wire Wire Line
-	6300 5000 6450 5000
-Wire Wire Line
-	6100 3650 6100 3900
-Connection ~ 6100 3650
-Wire Wire Line
-	6100 3650 6450 3650
-Wire Wire Line
-	6100 4100 6100 4600
-Connection ~ 6100 4600
-Wire Wire Line
-	6100 4600 6150 4600
+	6300 4600 6450 4600
 Wire Wire Line
 	7150 3900 7250 3900
-Text GLabel 6900 5000 0    50   Input ~ 0
+Text GLabel 6900 4600 0    50   Input ~ 0
 nSTDBY
 Wire Wire Line
-	6900 5000 7250 5000
-Wire Wire Line
-	7250 5000 7250 4800
-Wire Wire Line
-	6100 4600 6100 4850
-Wire Wire Line
-	6100 4850 6950 4850
-Wire Wire Line
-	6950 4850 6950 4600
+	6900 4600 7250 4600
 Wire Wire Line
 	6450 3650 7250 3650
 Wire Wire Line
@@ -1449,37 +1376,9 @@ Wire Wire Line
 	7250 3900 7350 3900
 Wire Wire Line
 	6450 4150 6450 4100
-Wire Wire Line
-	6450 4400 6450 4350
-Text GLabel 9650 2400 2    50   Input ~ 0
-ENABLE_STATUS
 Connection ~ 3250 4650
 Text GLabel 9650 1600 2    50   Input ~ 0
 WIFI
-$Comp
-L pace:BSS138K Q7
-U 1 1 5FD52255
-P 6350 4600
-F 0 "Q7" H 6554 4646 50  0000 L CNN
-F 1 "BSS138K" H 6554 4555 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6550 4700 50  0001 C CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 6350 4600 50  0001 C CNN
-F 4 "C255592" H 6350 4600 50  0001 C CNN "LCSC"
-	1    6350 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L pace:BSS138K Q8
-U 1 1 5FD52A2E
-P 7150 4600
-F 0 "Q8" H 7354 4646 50  0000 L CNN
-F 1 "BSS138K" H 7354 4555 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7350 4700 50  0001 C CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 7150 4600 50  0001 C CNN
-F 4 "C255592" H 7150 4600 50  0001 C CNN "LCSC"
-	1    7150 4600
-	1    0    0    -1  
-$EndComp
 $Comp
 L pace:PWR_FLAG #FLG?
 U 1 1 5FD5F0B1
@@ -1789,16 +1688,6 @@ Wire Wire Line
 Connection ~ 6200 2900
 Wire Wire Line
 	6200 2900 6200 2950
-Text Notes 11700 3150 0    50   ~ 0
-strapping
-Text Notes 11700 3250 0    50   ~ 0
-strapping
-Text Notes 11700 3350 0    50   ~ 0
-strapping
-Text Notes 11700 3000 0    50   ~ 0
-strapping
-Text Notes 11700 2900 0    50   ~ 0
-strapping
 Text GLabel 9650 2700 2    50   Input ~ 0
 IO1
 Wire Wire Line
@@ -1835,8 +1724,32 @@ Wire Wire Line
 	3650 4650 4000 4650
 NoConn ~ 9650 2000
 Wire Wire Line
-	4000 2750 4200 2750
-Wire Wire Line
 	2900 4650 3250 4650
 NoConn ~ 9650 2500
+Wire Wire Line
+	6000 3650 6450 3650
+Wire Wire Line
+	7250 4350 7250 4600
+Wire Wire Line
+	6450 4350 6450 4600
+Connection ~ 4000 2750
+Wire Wire Line
+	4000 2750 4200 2750
+Connection ~ 4200 2750
+$Comp
+L pace:PWR_FLAG #FLG?
+U 1 1 60179862
+P 4200 2750
+F 0 "#FLG?" H 4200 2825 50  0001 C CNN
+F 1 "PWR_FLAG" H 4200 2923 50  0001 C CNN
+F 2 "" H 4200 2750 50  0001 C CNN
+F 3 "~" H 4200 2750 50  0001 C CNN
+	1    4200 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2750 4200 2750
+Text GLabel 4300 2750 2    50   Input ~ 0
+Vraw
+NoConn ~ 9650 2400
 $EndSCHEMATC
