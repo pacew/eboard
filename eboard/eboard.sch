@@ -617,18 +617,6 @@ Connection ~ 4500 700
 Text Notes 3150 3600 0    50   ~ 0
 Connect single Li-ion or LiPo\nto one of these connectors
 $Comp
-L pace:ledgreen D1
-U 1 1 5FCA0A0E
-P 6450 4250
-F 0 "D1" V 6550 4150 50  0000 R CNN
-F 1 "ledgreen" V 6450 4150 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 6450 4250 50  0001 C CNN
-F 3 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Green-0805-Iv-207-249-mcd-atIF-20mA_C2297.html/?href=jlc-SMT" V 6450 4250 50  0001 C CNN
-F 4 "C2297" H 6450 4250 50  0001 C CNN "LCSC"
-	1    6450 4250
-	0    -1   -1   0   
-$EndComp
-$Comp
 L pace:10k R4
 U 1 1 5FCA1198
 P 7350 4000
@@ -934,18 +922,6 @@ F 3 "" H 8700 7700 50  0001 C CNN
 $EndComp
 Text GLabel 8050 1600 0    50   Input ~ 0
 RESET
-$Comp
-L pace:ledgreen D4
-U 1 1 5FB8D839
-P 8200 7150
-F 0 "D4" V 8300 7050 50  0000 R CNN
-F 1 "ledgreen" V 8200 7050 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 8200 7150 50  0001 C CNN
-F 3 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Green-0805-Iv-207-249-mcd-atIF-20mA_C2297.html/?href=jlc-SMT" V 8200 7150 50  0001 C CNN
-F 4 "C2297" H 8200 7150 50  0001 C CNN "LCSC"
-	1    8200 7150
-	0    -1   -1   0   
-$EndComp
 Text GLabel 8150 6800 0    50   Input ~ 0
 STATUS_LED
 $Comp
@@ -1752,4 +1728,28 @@ Wire Wire Line
 Text GLabel 4300 2750 2    50   Input ~ 0
 Vraw
 NoConn ~ 9650 2400
+$Comp
+L pace:ledgreen_0805 D1
+U 1 1 603C8290
+P 6450 4250
+F 0 "D1" V 6496 4180 50  0000 R CNN
+F 1 "ledgreen_0805" V 6405 4180 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 6450 4250 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Green-0805-Iv-207-249-mcd-atIF-20mA_C2297.html/?href=jlc-SMT" V 6450 4250 50  0001 C CNN
+F 4 "C2297" H 6450 4250 50  0001 C CNN "LCSC"
+	1    6450 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pace:ledyellow D4
+U 1 1 603E7730
+P 8200 7150
+F 0 "D4" V 8246 7080 50  0000 R CNN
+F 1 "ledyellow" V 8155 7080 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 8200 7150 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0603-Yellow-light_C72038.html/?href=jlc-SMT" V 8200 7150 50  0001 C CNN
+F 4 "C72038" H 8200 7150 50  0001 C CNN "LCSC"
+	1    8200 7150
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

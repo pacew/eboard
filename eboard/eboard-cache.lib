@@ -845,12 +845,12 @@ X Pin_2 2 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pace_ledgreen
+# pace_ledgreen_0805
 #
-DEF pace_ledgreen D 0 10 N N 1 F N
+DEF pace_ledgreen_0805 D 0 10 N N 1 F N
 F0 "D" -50 125 50 H V L CNN
-F1 "pace_ledgreen" -175 -100 50 H V L CNN
-F2 "LED_SMD:LED_0603_1608Metric" 0 0 50 V I C CNN
+F1 "pace_ledgreen_0805" -175 -100 50 H V L CNN
+F2 "LED_SMD:LED_0805_2012Metric" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 F4 "C2297" 0 0 50 H I C CNN "LCSC"
 $FPLIST
