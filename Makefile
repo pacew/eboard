@@ -1,4 +1,9 @@
-all:
+CFLAGS = -g -Wall
+
+all: sermon
+
+sermon: sermon.o
+	$(CC) $(CFLAGS) -o sermon sermon.o -lm
 
 blink:
 	ampy --port /dev/ttyUSB0 --baud 115200 put btest.py main.py

@@ -4,6 +4,9 @@ import time
 import socket
 import machine
 
+led = machine.Pin(5, machine.Pin.OUT)
+
+
 class EboardAdc:
     def __init__(self, pnum):
         self.adc = machine.ADC(machine.Pin(pnum))
@@ -67,6 +70,8 @@ def send_status():
 # credentials.json looks like:
 # { "ssid": "NAME", "password": "secret" }
 def main():
+    led.value(1)
+
     with open("credentials.json") as inf:
         global cred
         cred = json.load(inf)
@@ -75,7 +80,11 @@ def main():
 
     make_socket()
 
+    toggle = True
     while True:
+        led.value(1 if toggle else 0)
+        toggle = not toggle
+        
         ensure_connected()
         send_status()
         time.sleep(.1)
