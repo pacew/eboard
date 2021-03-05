@@ -2,6 +2,7 @@
 
 import socket
 import struct
+import json
 
 MCAST_GRP = '239.255.68.32'
 MCAST_PORT = 24248
@@ -13,4 +14,6 @@ mreq = struct.pack("4sl", socket.inet_aton(MCAST_GRP), socket.INADDR_ANY)
 sock.setsockopt(socket.IPPROTO_IP, socket.IP_ADD_MEMBERSHIP, mreq)
 
 while True:
-  print(sock.recv(10240))
+    raw_msg = sock.recv(2048).decode('utf8')
+    msg = json.loads(raw_msg)
+    print(msg)

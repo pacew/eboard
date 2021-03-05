@@ -2,6 +2,20 @@ import network
 import json
 import time
 import socket
+import machine
+
+class EboardAdc:
+    def __init__(self, pnum):
+        self.adc = machine.ADC(machine.Pin(pnum))
+        self.adc.atten(machine.ADC.ATTN_11DB)
+
+    def read(self):
+        return self.adc.read() / 4095.0 * 3.6 * 2
+
+adc0 = EboardAdc(35)
+adc1 = EboardAdc(34)
+
+
 
 sta_if = None
 
@@ -31,22 +45,27 @@ def ensure_connected():
             print('conecting...', count)
             time.sleep(.2)
 
-# multicast_addr = ('239.255.68.32', 24248)
-multicast_addr = ('224.0.0.1', 24248)
+multicast_addr = ('239.255.68.32', 24248)
 
 def make_socket():
     global sock
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
 
 def send_status():
-    msg = str(time.time())
+    msg = {}
+    msg['t'] = time.ticks_ms() / 1000.0
+    msg['a0'] = adc0.read()
+    msg['a1'] = adc1.read()
+
     print(msg)
-    sock.sendto(msg.encode('utf8'), multicast_addr)
+    sock.sendto(json.dumps(msg).encode('utf8'), multicast_addr)
+
+
+
+
 
 # credentials.json looks like:
 # { "ssid": "NAME", "password": "secret" }
-
-
 def main():
     with open("credentials.json") as inf:
         global cred
