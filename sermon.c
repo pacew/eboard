@@ -83,6 +83,7 @@ main (int argc, char **argv)
 	setrts (0);
 	setdtr (0);
 
+	printf ("C-x to exit monitor; C-r to reset processor\r\n");
 	while (1) {
 		FD_ZERO (&rset);
 		FD_SET (0, &rset);
@@ -96,8 +97,9 @@ main (int argc, char **argv)
 			while (read (0, &ch, 1) == 1) {
 				ch &= 0x7f;
 				switch (ch) {
-				case 'C' & 037:
+				case 'X' & 037:
 					goto done;
+
 				case 'R' & 037:
 					setrts (1);
 					usleep (100 * 1000);
