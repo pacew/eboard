@@ -68,3 +68,35 @@ esp32
 monitor battery voltage  (0-1v interal adc, or external?)
 3x aa batteries
 gpio pins
+
+================================================================
+bootstrap
+
+http://docs.micropython.org/en/latest/esp32/quickref.html
+
+
+esptool.py --chip auto --port /dev/ttyUSB0 chip_id
+
+esptool.py v3.0
+Serial port /dev/ttyUSB0
+Connecting......
+Detecting chip type... ESP32
+Chip is ESP32-PICO-D4 (revision 1)
+Features: WiFi, BT, Dual Core, 240MHz, Embedded Flash, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 94:b9:7e:88:13:e8
+Uploading stub...
+Running stub...
+Stub running...
+Warning: ESP32 has no Chip ID. Reading MAC instead.
+MAC: 94:b9:7e:88:13:e8
+Hard resetting via RTS pin...
+
+esptool.py --port /dev/ttyUSB0 erase_flash
+
+
+esptool.py --port /dev/ttyUSB0 write_flash -z 0x1000 ~/Downloads/tinypico-idf3-20201220-unstable-v1.13-266-g069557ede.bin 
+
+minicom ttyUSB0
+switch to 115kbit/s
+
