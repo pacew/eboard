@@ -10,12 +10,14 @@ import socket
 import machine
 import os
 import urequests as requests
+import gc
+import uselect
 
 led = machine.Pin(5, machine.Pin.OUT)
 
 
 url = 'http://k.pacew.org:16550/eboard'
-def reload():
+def reload(hard_reset):
     ensure_connected()
     print('reload from', url)
     resp = requests.get(url)
@@ -27,7 +29,17 @@ def reload():
     print()
     print('*********************')
     print('success ... rebooting')
-    machine.soft_reset()
+
+    gc.collect()
+    print('mem_free', gc.mem_free())
+
+    if hard_reset:
+        machine.reset()
+    else:
+        machine.soft_reset()
+
+def r():
+    reload(False)
 
 class EboardAdc:
     def __init__(self, pnum):
@@ -72,21 +84,59 @@ def ensure_connected():
 
 # randomly picked from 239.255.x.x and non-privledged port sace
 multicast_addr = ('239.255.68.32', 24248)
+listen_port = 17921
+
+sock = None
 
 def make_socket():
     global sock
-    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
+    if sock is None:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        sock.bind(('0.0.0.0', listen_port))
 
 def send_status():
     msg = {}
     msg['t'] = time.ticks_ms() / 1000.0
+    msg['boot_id'] = boot_id
+
+    msg['ip'] = sta_if.ifconfig()[0]
+    msg['port'] = listen_port
+
+
     msg['a0'] = adc0.read()
     msg['a1'] = adc1.read()
 
     print(msg)
     sock.sendto(json.dumps(msg).encode('utf8'), multicast_addr)
 
+last_us = time.ticks_us()
+secs = 0
 
+def get_secs():
+    global last_us, secs
+
+    now = time.ticks_us()
+    delta_us = time.ticks_diff(now, last_us)
+    last_us = now
+    secs += delta_us / 1e6
+    return secs
+                        
+def handle_input():
+    pkt_raw, addr = sock.recvfrom(2048)
+
+    pkt = pkt_raw.decode('utf8')
+    try:
+        cmd = json.loads(pkt)
+    except ValueError:
+        sock.sendto('err\n', addr)
+        return
+
+    op = cmd.get('op')
+    if op == 'reload':
+        reload(True)
+
+    sock.sendto('ok\n', addr)
+    
 
 
 
@@ -99,18 +149,37 @@ def main():
         global cred
         cred = json.load(inf)
 
-    print(cred)
-
     make_socket()
 
+    poll = uselect.poll()
+    poll.register(sock, uselect.POLLIN)
+
+    global boot_id
+    r = os.urandom(3)
+    boot_id = r[0] + (r[1] * 0x100) + (r[2] * 0x10000)
+
     toggle = True
+
+    last_status = get_secs()
+    last_blink = get_secs()
+    
     while True:
-        led.value(1 if toggle else 0)
-        toggle = not toggle
-        
         ensure_connected()
-        send_status()
-        time.sleep(.1)
+        socks = poll.poll(500) # milliseconds
+
+        now = get_secs()
+
+        if now - last_blink > .5:
+            last_blink = now
+            toggle = not toggle
+            led.value(1 if toggle else 0)
+
+        if now - last_status > 1:
+            last_status = now
+            send_status()
+
+        if len(socks) > 0:
+            handle_input()
 
 print('git', git_commit)
 main()
