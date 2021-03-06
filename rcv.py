@@ -48,18 +48,22 @@ class Board:
 class Screen:
     def __init__(self):
         self.detail = False
+        self.last_key = None
         Board.find(('foo', 0))
         Board.find(('bar', 0))
 
     def run(self, stdscr):
         self.stdscr = stdscr
+        self.stdscr.nodelay(True)
         
         last_update = 0
         while True:
-            rset, _, _ = select.select([sock], [], [], 0.1)
+            rset, _, _ = select.select([sock, sys.stdin], [], [], 0.1)
             if sock in rset:
                 self.receive_packet(sock)
     
+            self.last_key = self.stdscr.getkey()
+
             if len(rset) == 0 or time.time() - last_update >= 1:
                 last_update = time.time()
                 self.display()
@@ -92,6 +96,10 @@ class Screen:
             line = f'{addr:18s}'
             self.stdscr.addstr(row, 0, line)
             row += 1
+
+        line = 'key = ' + str(self.last_key)
+        self.stdscr.addstr(row, 0, line)
+        row += 1
 
 
         self.stdscr.move(row,0)
