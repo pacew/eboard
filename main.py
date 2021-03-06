@@ -14,9 +14,10 @@ import urequests as requests
 led = machine.Pin(5, machine.Pin.OUT)
 
 
-url = 'http://k.pacew.org:10647/eboard'
+url = 'http://k.pacew.org:16550/eboard'
 def reload():
     ensure_connected()
+    print('reload from', url)
     resp = requests.get(url)
     payload = resp.text
     with open('new.py', 'w') as outf:
