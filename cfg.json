@@ -8,8 +8,8 @@
   "document_root": "/home/pace/eboard/static",
   "external_name": "k.pacew.org",
   "key_file": "/etc/apache2/wildcard.pacew.org.key",
-  "local_url": "https://local.pacew.org:10226/",
-  "main_url": "https://k.pacew.org:10226/",
+  "local_url": "http://local.pacew.org:10647/",
+  "main_url": "http://k.pacew.org:10647/",
   "nat_name": "k.pacew.org",
   "plain_port": 10647,
   "plain_url": "http://k.pacew.org:10647/",
@@ -18,9 +18,8 @@
   "site_name": "eboard",
   "siteid": "eboard-pace",
   "src_dir": "/home/pace/eboard",
-  "ssl_enabled": true,
-  "ssl_port": 10226,
-  "ssl_url": "https://k.pacew.org:10226/",
+  "ssl_enabled": false,
+  "ssl_url": "",
   "wss_port": 10911,
   "wss_url": "wss://k.pacew.org:10911/"
 }

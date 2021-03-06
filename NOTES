@@ -1,3 +1,8 @@
+pico d4
+40 MHz crystal
+4 MB internal flash
+
+
 ../lipo-charger/jmon.py
 
 

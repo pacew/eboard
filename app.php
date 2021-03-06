@@ -115,6 +115,26 @@ function pfinish () {
     exit (0);
 }
 
+function eboard() {
+    $commit = trim(shell_exec("git show -s --format='%ci %h' HEAD"));
+    $result = trim(shell_exec('git status --porcelain --untracked-files=no'));
+    if ($result != "") {
+        $commit .= " dirty";
+    }
+
+
+    do_commits ();
+	if (ob_list_handlers ())
+		ob_clean ();
+    $payload = file_get_contents("main.py");
+    printf ("git_commit = '$commit'\n");
+    printf ("\n");
+    echo ($payload);
+    exit ();
+}
+
+add_route('eboard', 'eboard');
+
 
 if (! get_option ("flat") && ! @$cli_mode) {
     require (router());
