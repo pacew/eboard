@@ -9,6 +9,7 @@ import select
 import time
 import datetime
 import curses
+import re
 
 from operator import attrgetter
 
@@ -49,6 +50,8 @@ class Screen:
     def __init__(self):
         self.detail = False
         self.last_key = None
+        self.current_idx = 0
+
         Board.find(('foo', 0))
         Board.find(('bar', 0))
 
@@ -62,7 +65,11 @@ class Screen:
             if sock in rset:
                 self.receive_packet(sock)
     
-            self.last_key = self.stdscr.getkey()
+            if sys.stdin in rset:
+                key = self.stdscr.getkey()
+                if key is not None:
+                    self.process_key(key)
+                self.last_key = key
 
             if len(rset) == 0 or time.time() - last_update >= 1:
                 last_update = time.time()
@@ -74,6 +81,11 @@ class Screen:
 
         board = Board.find(raddr)
         
+    def process_key(self, key):
+        if re.search('^[1-9]', key):
+            self.current_idx = int(key)
+
+
     def display(self):
         self.stdscr.clear()
         
@@ -91,16 +103,25 @@ class Screen:
         row += 1
         row += 1
         
+        idx = 1
         for raddr in sorted(Board.boards):
+            board = Board.boards[raddr]
+            board.idx = idx
+            
             (addr, port) = raddr
-            line = f'{addr:18s}'
-            self.stdscr.addstr(row, 0, line)
-            row += 1
+            line = str(idx) + ' '
+            line += f'{addr:18s}'
 
-        line = 'key = ' + str(self.last_key)
+            flags = 0
+            if self.current_idx == idx:
+                flags = curses.A_STANDOUT
+            self.stdscr.addstr(row, 0, line, flags)
+            row += 1
+            idx += 1
+
+        line = 'key = ' + str(self.last_key) + str(type(self.last_key))
         self.stdscr.addstr(row, 0, line)
         row += 1
-
 
         self.stdscr.move(row,0)
         self.stdscr.refresh()
