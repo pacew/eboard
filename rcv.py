@@ -41,6 +41,7 @@ class Board:
     def __init__(self, raddr):
         self.raddr = raddr
         self.last_msg = dict()
+
         Board.boards[raddr] = self
     
     def set_last_msg(self, msg):
@@ -77,13 +78,22 @@ class Screen:
 
     def receive_packet(self, sock):
         raw_msg, raddr = sock.recvfrom(2048)
-        msg = json.loads(raw_msg)
 
         board = Board.find(raddr)
+        board.last_recv_secs = time.time()
+
+        try:
+            msg = json.loads(raw_msg)
+        except json.decoder.JSONDecodeError:
+            msg = {'json_error', True}
         
+        board.set_last_msg(msg)
+
     def process_key(self, key):
         if re.search('^[1-9]', key):
             self.current_idx = int(key)
+        elif key == 'q':
+            sys.exit(0)
 
 
     def display(self):
@@ -94,38 +104,61 @@ class Screen:
         else:
             self.display_summary()
 
+    def output(self, chars, flags=0):
+        self.stdscr.addstr(self.row, self.col, chars, flags)
+        self.col += len(chars)
+
+    def newline(self):
+        self.row += 1
+        self.col = 0
+
     def display_summary(self):
         now = datetime.datetime.now()
+        
+        self.row = 0
+        self.col = 0
 
-        row = 0
-        self.stdscr.addstr(row, 0, 
-                           now.strftime('%Y-%m-%d %H:%M:%S'))
-        row += 1
-        row += 1
+        self.output(now.strftime('%Y-%m-%d %H:%M:%S'))
+        self.newline()
         
         idx = 1
+        cur_board = None
         for raddr in sorted(Board.boards):
             board = Board.boards[raddr]
             board.idx = idx
             
             (addr, port) = raddr
-            line = str(idx) + ' '
-            line += f'{addr:18s}'
+
+            self.col = 0
+            self.output(str(idx) + ' ')
 
             flags = 0
             if self.current_idx == idx:
                 flags = curses.A_STANDOUT
-            self.stdscr.addstr(row, 0, line, flags)
-            row += 1
+                cur_board = board
+            
+            self.output(f'{addr:18s}', flags)
+            self.newline()
             idx += 1
 
         line = 'key = ' + str(self.last_key) + str(type(self.last_key))
-        self.stdscr.addstr(row, 0, line)
-        row += 1
+        self.output(line)
+        self.newline()
+        self.newline()
 
-        self.stdscr.move(row,0)
+        if cur_board and cur_board.last_msg:
+            self.display_board(cur_board)
+
+        try:
+            self.stdscr.move(self.row, self.col)
+        except:
+            self.output(f'err {self.row} {self.col}')
         self.stdscr.refresh()
             
+    def display_board(self, board):
+        for key, val in board.last_msg.items():
+            self.output(f'{key:30s} {str(val):30.30s}')
+            self.newline()
 
 
 def main():
