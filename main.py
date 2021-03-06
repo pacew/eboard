@@ -1,11 +1,32 @@
+# psite OTA sets git_commit here
+
+if globals().get('git_commit') is None:
+    git_commit = '(not set)'
+
 import network
 import json
 import time
 import socket
 import machine
+import os
+import urequests as requests
 
 led = machine.Pin(5, machine.Pin.OUT)
 
+
+url = 'http://k.pacew.org:10647/eboard'
+def reload():
+    ensure_connected()
+    resp = requests.get(url)
+    payload = resp.text
+    with open('new.py', 'w') as outf:
+        outf.write(payload)
+    os.rename('new.py', 'main.py')
+    print()
+    print()
+    print('*********************')
+    print('success ... rebooting')
+    machine.soft_reset()
 
 class EboardAdc:
     def __init__(self, pnum):
@@ -48,6 +69,7 @@ def ensure_connected():
             print('conecting...', count)
             time.sleep(.2)
 
+# randomly picked from 239.255.x.x and non-privledged port sace
 multicast_addr = ('239.255.68.32', 24248)
 
 def make_socket():
@@ -88,3 +110,8 @@ def main():
         ensure_connected()
         send_status()
         time.sleep(.1)
+
+print('git', git_commit)
+main()
+
+        
